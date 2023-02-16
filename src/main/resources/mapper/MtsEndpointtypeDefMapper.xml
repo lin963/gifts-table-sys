@@ -1,0 +1,1686 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gf.gifts.busi.order.dao.mapper.MtsEndpointtypeDefMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.gf.gifts.busi.order.entity.MtsEndpointtypeDef">
+            <id column="market" property="market" />
+            <result column="stktype" property="stktype" />
+            <result column="bsflag" property="bsflag" />
+            <result column="clearspeed" property="clearspeed" />
+            <result column="assetdealdatetype" property="assetdealdatetype" />
+            <result column="assetdealpoint" property="assetdealpoint" />
+            <result column="cashctrltype" property="cashctrltype" />
+            <result column="stkctrltype" property="stkctrltype" />
+            <result column="cashaddtype" property="cashaddtype" />
+            <result column="stkaddtype" property="stkaddtype" />
+            <result column="avladdpoint" property="avladdpoint" />
+            <result column="setttype" property="setttype" />
+            <result column="funddirect" property="funddirect" />
+            <result column="stkdirect" property="stkdirect" />
+            <result column="cancancelflag" property="cancancelflag" />
+            <result column="reorderflag" property="reorderflag" />
+            <result column="amtcalmode" property="amtcalmode" />
+            <result column="businclass" property="businclass" />
+            <result column="bsdirect" property="bsdirect" />
+            <result column="pricecalmode" property="pricecalmode" />
+            <result column="stktargettype" property="stktargettype" />
+            <result column="fundacct" property="fundacct" />
+            <result column="market" property="market" />
+            <result column="stktypes" property="stktypes" />
+            <result column="bsflags" property="bsflags" />
+            <result column="feeid" property="feeid" />
+            <result column="calctype" property="calctype" />
+            <result column="feerate" property="feerate" />
+            <result column="minfee" property="minfee" />
+            <result column="maxfee" property="maxfee" />
+            <result column="remark" property="remark" />
+            <result column="fundacct" property="fundacct" />
+            <result column="market" property="market" />
+            <result column="stktype" property="stktype" />
+            <result column="bsflag" property="bsflag" />
+            <result column="feeid" property="feeid" />
+            <result column="calctype" property="calctype" />
+            <result column="feerate" property="feerate" />
+            <result column="minfee" property="minfee" />
+            <result column="maxfee" property="maxfee" />
+            <result column="remark" property="remark" />
+            <result column="indexkey" property="indexkey" />
+            <result column="bpnode" property="bpnode" />
+            <result column="srvgroup" property="srvgroup" />
+            <result column="status" property="status" />
+            <result column="servertypes" property="servertypes" />
+            <result column="remark" property="remark" />
+            <result column="servergroup" property="servergroup" />
+            <result column="endpointtype" property="endpointtype" />
+            <result column="bpnode" property="bpnode" />
+            <result column="srvname" property="srvname" />
+            <result column="zmqmode" property="zmqmode" />
+            <result column="protocoltype" property="protocoltype" />
+            <result column="address" property="address" />
+            <result column="baktype" property="baktype" />
+            <result column="remark" property="remark" />
+            <result column="status" property="status" />
+            <result column="topic_string" property="topicString" />
+            <result column="fundid" property="fundid" />
+            <result column="funcid" property="funcid" />
+            <result column="ip" property="ip" />
+            <result column="port" property="port" />
+            <result column="remark" property="remark" />
+            <result column="serverid" property="serverid" />
+            <result column="lastsysdate" property="lastsysdate" />
+            <result column="busidate" property="busidate" />
+            <result column="orderdate" property="orderdate" />
+            <result column="status" property="status" />
+            <result column="dbstatus" property="dbstatus" />
+            <result column="dboperid" property="dboperid" />
+            <result column="monitorid" property="monitorid" />
+            <result column="remark" property="remark" />
+            <result column="id" property="id" />
+            <result column="monitorid" property="monitorid" />
+            <result column="servername" property="servername" />
+            <result column="uploadunixtime" property="uploadunixtime" />
+            <result column="count" property="count" />
+            <result column="uploadip" property="uploadip" />
+            <result column="value" property="value" />
+            <result column="bpnode" property="bpnode" />
+            <result column="srvgroup" property="srvgroup" />
+            <result column="fundid" property="fundid" />
+            <result column="status" property="status" />
+            <result column="remark" property="remark" />
+            <result column="server_name" property="serverName" />
+            <result column="upload_time" property="uploadTime" />
+            <result column="log_info" property="logInfo" />
+            <result column="ip" property="ip" />
+            <result column="bpnode" property="bpnode" />
+            <result column="funcid" property="funcid" />
+            <result column="userid" property="userid" />
+            <result column="servertype" property="servertype" />
+            <result column="servername" property="servername" />
+            <result column="funcid" property="funcid" />
+            <result column="status" property="status" />
+            <result column="remark" property="remark" />
+            <result column="serverproperty" property="serverproperty" />
+            <result column="serverbind" property="serverbind" />
+            <result column="showorder" property="showorder" />
+            <result column="execorder" property="execorder" />
+            <result column="servergroup" property="servergroup" />
+            <result column="bpnode" property="bpnode" />
+            <result column="funcid" property="funcid" />
+            <result column="start_id" property="startId" />
+            <result column="process_id" property="processId" />
+            <result column="servername" property="servername" />
+            <result column="ip" property="ip" />
+            <result column="updatetime" property="updatetime" />
+            <result column="phydate" property="phydate" />
+            <result column="startdate" property="startdate" />
+            <result column="starttime" property="starttime" />
+            <result column="idle_as" property="idleAs" />
+            <result column="column_name" property="columnName" />
+            <result column="data_type" property="dataType" />
+            <result column="data_length" property="dataLength" />
+            <result column="data_precision" property="dataPrecision" />
+            <result column="data_scale" property="dataScale" />
+            <result column="dictitem" property="dictitem" />
+            <result column="remark" property="remark" />
+            <result column="endpointtype" property="endpointtype" />
+            <result column="bind_type" property="bindType" />
+            <result column="socket_type" property="socketType" />
+            <result column="protocol" property="protocol" />
+            <result column="endpoint_name" property="endpointName" />
+            <result column="zmq_mode_describe" property="zmqModeDescribe" />
+            <result column="topic_type" property="topicType" />
+            <result column="topic_string" property="topicString" />
+            <result column="status" property="status" />
+            <result column="server_type" property="serverType" />
+            <result column="endpointtype" property="endpointtype" />
+            <result column="deploy_type" property="deployType" />
+            <result column="send_flag" property="sendFlag" />
+            <result column="connect_endpointtype" property="connectEndpointtype" />
+            <result column="bind_endpointtype" property="bindEndpointtype" />
+            <result column="connect_type" property="connectType" />
+            <result column="connect_name" property="connectName" />
+            <result column="paramid" property="paramid" />
+            <result column="orgid" property="orgid" />
+            <result column="paramvalue" property="paramvalue" />
+            <result column="pathtype" property="pathtype" />
+            <result column="bsflag" property="bsflag" />
+            <result column="market" property="market" />
+            <result column="stktype" property="stktype" />
+            <result column="rptmode" property="rptmode" />
+            <result column="order_businessid" property="orderBusinessid" />
+            <result column="batchorder_businessid" property="batchorderBusinessid" />
+            <result column="cancel_businessid" property="cancelBusinessid" />
+            <result column="orderqry_businessid" property="orderqryBusinessid" />
+            <result column="match_way" property="matchWay" />
+            <result column="sno" property="sno" />
+            <result column="msg_type" property="msgType" />
+            <result column="trace_type" property="traceType" />
+            <result column="trace_sno" property="traceSno" />
+            <result column="msg_no" property="msgNo" />
+            <result column="servergroup" property="servergroup" />
+            <result column="bpnodeid" property="bpnodeid" />
+            <result column="trade_time" property="tradeTime" />
+            <result column="db_time" property="dbTime" />
+            <result column="market" property="market" />
+            <result column="stkcode" property="stkcode" />
+            <result column="loftype" property="loftype" />
+            <result column="maxbuyqty" property="maxbuyqty" />
+            <result column="minbuyqty" property="minbuyqty" />
+            <result column="buyunit" property="buyunit" />
+            <result column="maxsaleqty" property="maxsaleqty" />
+            <result column="minsaleqty" property="minsaleqty" />
+            <result column="saleunit" property="saleunit" />
+            <result column="tradestate" property="tradestate" />
+            <result column="settlefundays" property="settlefundays" />
+            <result column="i_by" property="iBy" />
+            <result column="c_by" property="cBy" />
+            <result column="remark" property="remark" />
+            <result column="lastdate" property="lastdate" />
+            <result column="stkid" property="stkid" />
+            <result column="busi_date" property="busiDate" />
+            <result column="busi_time" property="busiTime" />
+            <result column="phy_date" property="phyDate" />
+            <result column="phy_time" property="phyTime" />
+            <result column="funcid" property="funcid" />
+            <result column="server_group" property="serverGroup" />
+            <result column="busi_sno" property="busiSno" />
+            <result column="log_type" property="logType" />
+            <result column="log_info" property="logInfo" />
+            <result column="taskid" property="taskid" />
+            <result column="busidate" property="busidate" />
+            <result column="begintime" property="begintime" />
+            <result column="endtime" property="endtime" />
+            <result column="passflag" property="passflag" />
+            <result column="last_begintime" property="lastBegintime" />
+            <result column="last_endtime" property="lastEndtime" />
+            <result column="last_passflag" property="lastPassflag" />
+            <result column="errorinfo" property="errorinfo" />
+            <result column="remark" property="remark" />
+            <result column="lbmid" property="lbmid" />
+            <result column="securitydate" property="securitydate" />
+            <result column="securitytime" property="securitytime" />
+            <result column="nodeid" property="nodeid" />
+            <result column="mac" property="mac" />
+            <result column="sessionid" property="sessionid" />
+            <result column="ip" property="ip" />
+            <result column="userid" property="userid" />
+            <result column="cnt" property="cnt" />
+            <result column="vendor_id" property="vendorId" />
+            <result column="collect_date" property="collectDate" />
+            <result column="collect_time" property="collectTime" />
+            <result column="plug_name" property="plugName" />
+            <result column="plug_account" property="plugAccount" />
+            <result column="plug_guuid" property="plugGuuid" />
+            <result column="plug_ip" property="plugIp" />
+            <result column="plug_mac" property="plugMac" />
+            <result column="err_type" property="errType" />
+            <result column="userid" property="userid" />
+            <result column="nodeid" property="nodeid" />
+            <result column="mac" property="mac" />
+            <result column="ip" property="ip" />
+            <result column="userid" property="userid" />
+            <result column="createtime" property="createtime" />
+            <result column="updatetime" property="updatetime" />
+            <result column="unfreezetime" property="unfreezetime" />
+            <result column="over_counts" property="overCounts" />
+            <result column="challenge_counts" property="challengeCounts" />
+            <result column="file_destroy_counts" property="fileDestroyCounts" />
+            <result column="freezestatus" property="freezestatus" />
+            <result column="remitstatus" property="remitstatus" />
+            <result column="vendor_id" property="vendorId" />
+            <result column="collect_date" property="collectDate" />
+            <result column="collect_time" property="collectTime" />
+            <result column="plug_name" property="plugName" />
+            <result column="plug_account" property="plugAccount" />
+            <result column="plug_account1" property="plugAccount1" />
+            <result column="plug_guuid" property="plugGuuid" />
+            <result column="plug_ip" property="plugIp" />
+            <result column="plug_mac" property="plugMac" />
+            <result column="collect_date" property="collectDate" />
+            <result column="collect_time" property="collectTime" />
+            <result column="vendor_id" property="vendorId" />
+            <result column="server_online" property="serverOnline" />
+            <result column="vendor_id" property="vendorId" />
+            <result column="version" property="version" />
+            <result column="plug_db" property="plugDb" />
+            <result column="collect_date" property="collectDate" />
+            <result column="collect_time" property="collectTime" />
+            <result column="server_id" property="serverId" />
+            <result column="ver_check" property="verCheck" />
+            <result column="qsid_check" property="qsidCheck" />
+            <result column="file_check" property="fileCheck" />
+            <result column="act_chal" property="actChal" />
+            <result column="fre_limit" property="freLimit" />
+            <result column="file_check_reject" property="fileCheckReject" />
+            <result column="act_chal_reject" property="actChalReject" />
+            <result column="fre_limit_reject" property="freLimitReject" />
+            <result column="vendor_id" property="vendorId" />
+            <result column="collect_date" property="collectDate" />
+            <result column="collect_time" property="collectTime" />
+            <result column="plug_client_sum" property="plugClientSum" />
+            <result column="plug_client_account" property="plugClientAccount" />
+            <result column="warn_sum" property="warnSum" />
+            <result column="file_check_warn_sum" property="fileCheckWarnSum" />
+            <result column="act_chal_warn_sum" property="actChalWarnSum" />
+            <result column="fre_limit_warn_sum" property="freLimitWarnSum" />
+            <result column="rej_sum" property="rejSum" />
+            <result column="file_check_rej_sum" property="fileCheckRejSum" />
+            <result column="act_chal_rej_sum" property="actChalRejSum" />
+            <result column="fre_limit_rej_sum" property="freLimitRejSum" />
+            <result column="vendor_id" property="vendorId" />
+            <result column="collect_date" property="collectDate" />
+            <result column="collect_time" property="collectTime" />
+            <result column="wg_type" property="wgType" />
+            <result column="wg_type_num" property="wgTypeNum" />
+            <result column="sessionid" property="sessionid" />
+            <result column="createtime" property="createtime" />
+            <result column="updatetime" property="updatetime" />
+            <result column="killtime" property="killtime" />
+            <result column="status" property="status" />
+            <result column="busidate" property="busidate" />
+            <result column="logsno" property="logsno" />
+            <result column="userid" property="userid" />
+            <result column="sign_phydate" property="signPhydate" />
+            <result column="sign_time" property="signTime" />
+            <result column="sessionid" property="sessionid" />
+            <result column="action" property="action" />
+            <result column="agreement_id" property="agreementId" />
+            <result column="agreement_version" property="agreementVersion" />
+            <result column="agreement_tittle" property="agreementTittle" />
+            <result column="menuid" property="menuid" />
+            <result column="agreement_channel" property="agreementChannel" />
+            <result column="ext_agreement_id" property="extAgreementId" />
+            <result column="sign_main_type" property="signMainType" />
+            <result column="sign_main_id" property="signMainId" />
+            <result column="reserve" property="reserve" />
+            <result column="agreement_id" property="agreementId" />
+            <result column="ext_agreement_id" property="extAgreementId" />
+            <result column="agree_version" property="agreeVersion" />
+            <result column="sign_main_type" property="signMainType" />
+            <result column="sign_main_id" property="signMainId" />
+            <result column="agreement_channel" property="agreementChannel" />
+            <result column="userid" property="userid" />
+            <result column="sign_phydate" property="signPhydate" />
+            <result column="sign_time" property="signTime" />
+            <result column="update_date" property="updateDate" />
+            <result column="update_time" property="updateTime" />
+            <result column="status" property="status" />
+            <result column="reserve" property="reserve" />
+            <result column="logsno" property="logsno" />
+            <result column="userid" property="userid" />
+            <result column="paramname" property="paramname" />
+            <result column="paramvalue" property="paramvalue" />
+            <result column="upddate" property="upddate" />
+            <result column="updtime" property="updtime" />
+            <result column="sno" property="sno" />
+            <result column="msgtitle" property="msgtitle" />
+            <result column="msginfo" property="msginfo" />
+            <result column="createdate" property="createdate" />
+            <result column="begindate" property="begindate" />
+            <result column="expiredate" property="expiredate" />
+            <result column="opertime" property="opertime" />
+            <result column="msgtype" property="msgtype" />
+            <result column="orgid" property="orgid" />
+            <result column="operuserid" property="operuserid" />
+            <result column="opername" property="opername" />
+            <result column="msgstatus" property="msgstatus" />
+            <result column="nodeid" property="nodeid" />
+            <result column="dbname" property="dbname" />
+            <result column="tablename" property="tablename" />
+            <result column="datacapacity" property="datacapacity" />
+            <result column="datacount" property="datacount" />
+            <result column="lastchecktime" property="lastchecktime" />
+            <result column="databasesize" property="databasesize" />
+            <result column="tablesize" property="tablesize" />
+            <result column="tablestatus" property="tablestatus" />
+            <result column="databasestatus" property="databasestatus" />
+            <result column="agreement_id" property="agreementId" />
+            <result column="agree_version" property="agreeVersion" />
+            <result column="agreement_channel" property="agreementChannel" />
+            <result column="ext_agreement_id" property="extAgreementId" />
+            <result column="agree_title" property="agreeTitle" />
+            <result column="ext_info" property="extInfo" />
+            <result column="update_date" property="updateDate" />
+            <result column="update_time" property="updateTime" />
+            <result column="valid_period" property="validPeriod" />
+            <result column="interface_name" property="interfaceName" />
+            <result column="param_name" property="paramName" />
+            <result column="ismust" property="ismust" />
+            <result column="ispost" property="ispost" />
+            <result column="isvalid" property="isvalid" />
+            <result column="paramid" property="paramid" />
+            <result column="dispsno" property="dispsno" />
+            <result column="groupid" property="groupid" />
+            <result column="paramname" property="paramname" />
+            <result column="datatype" property="datatype" />
+            <result column="datalen" property="datalen" />
+            <result column="declen" property="declen" />
+            <result column="ctrltype" property="ctrltype" />
+            <result column="ctrlstyle" property="ctrlstyle" />
+            <result column="displaywidth" property="displaywidth" />
+            <result column="dictitem" property="dictitem" />
+            <result column="valuelist" property="valuelist" />
+            <result column="status" property="status" />
+            <result column="settype" property="settype" />
+            <result column="verifyfunc" property="verifyfunc" />
+            <result column="remark" property="remark" />
+            <result column="isnull" property="isnull" />
+            <result column="defaultvalue" property="defaultvalue" />
+            <result column="groupid" property="groupid" />
+            <result column="parentgroupid" property="parentgroupid" />
+            <result column="groupname" property="groupname" />
+            <result column="describe" property="describe" />
+            <result column="imgindex" property="imgindex" />
+            <result column="managerment" property="managerment" />
+            <result column="app_category" property="appCategory" />
+            <result column="app_type" property="appType" />
+            <result column="env_type" property="envType" />
+            <result column="version_type" property="versionType" />
+            <result column="version_no" property="versionNo" />
+            <result column="version_sno" property="versionSno" />
+            <result column="app_name" property="appName" />
+            <result column="version_time" property="versionTime" />
+            <result column="version_size" property="versionSize" />
+            <result column="version_md5" property="versionMd5" />
+            <result column="file_name_content" property="fileNameContent" />
+            <result column="file_name_ia32" property="fileNameIa32" />
+            <result column="file_name_x64" property="fileNameX64" />
+            <result column="version_text" property="versionText" />
+            <result column="must_update" property="mustUpdate" />
+            <result column="version_site" property="versionSite" />
+            <result column="version_mode" property="versionMode" />
+            <result column="update_date" property="updateDate" />
+            <result column="update_time" property="updateTime" />
+            <result column="valid" property="valid" />
+            <result column="remark" property="remark" />
+            <result column="orgids" property="orgids" />
+            <result column="userids" property="userids" />
+            <result column="bpnode" property="bpnode" />
+            <result column="srvgroup" property="srvgroup" />
+            <result column="servertypes" property="servertypes" />
+            <result column="serverscount" property="serverscount" />
+            <result column="status" property="status" />
+            <result column="remark" property="remark" />
+            <result column="stkcode" property="stkcode" />
+            <result column="market" property="market" />
+            <result column="stkid" property="stkid" />
+            <result column="stkname" property="stkname" />
+            <result column="moneytype" property="moneytype" />
+            <result column="stkstatus" property="stkstatus" />
+            <result column="fundkind" property="fundkind" />
+            <result column="typeunit" property="typeunit" />
+            <result column="modifydate" property="modifydate" />
+            <result column="modifytime" property="modifytime" />
+            <result column="modifyoperid" property="modifyoperid" />
+            <result column="flowtype" property="flowtype" />
+            <result column="transfer_count" property="transferCount" />
+            <result column="modelname" property="modelname" />
+            <result column="modifyoperid" property="modifyoperid" />
+            <result column="modifydate" property="modifydate" />
+            <result column="modifytime" property="modifytime" />
+            <result column="stkcode" property="stkcode" />
+            <result column="market" property="market" />
+            <result column="busi_type" property="busiType" />
+            <result column="busibegindate" property="busibegindate" />
+            <result column="busienddate" property="busienddate" />
+            <result column="reportunit" property="reportunit" />
+            <result column="minreportqty" property="minreportqty" />
+            <result column="maxreportqty" property="maxreportqty" />
+            <result column="transinstkcode" property="transinstkcode" />
+            <result column="transinstkname" property="transinstkname" />
+            <result column="busiprice" property="busiprice" />
+            <result column="stkid" property="stkid" />
+            <result column="productid" property="productid" />
+            <result column="agrtype" property="agrtype" />
+            <result column="backpurchasecode" property="backpurchasecode" />
+            <result column="calpmunitincm" property="calpmunitincm" />
+            <result column="changebeforedurationenddate" property="changebeforedurationenddate" />
+            <result column="chiname" property="chiname" />
+            <result column="closeperiodbegindate" property="closeperiodbegindate" />
+            <result column="closeperiodenddate" property="closeperiodenddate" />
+            <result column="closeperiodtypecode" property="closeperiodtypecode" />
+            <result column="collectbegindate" property="collectbegindate" />
+            <result column="collectenddate" property="collectenddate" />
+            <result column="contracteffdate" property="contracteffdate" />
+            <result column="contracteffnoticedate" property="contracteffnoticedate" />
+            <result column="datastatus" property="datastatus" />
+            <result column="dayreturn" property="dayreturn" />
+            <result column="delid" property="delid" />
+            <result column="discount" property="discount" />
+            <result column="durationbegindate" property="durationbegindate" />
+            <result column="durationenddate" property="durationenddate" />
+            <result column="durationyear" property="durationyear" />
+            <result column="endlistdate" property="endlistdate" />
+            <result column="engname" property="engname" />
+            <result column="engnameshort" property="engnameshort" />
+            <result column="exchangecode" property="exchangecode" />
+            <result column="exchangename" property="exchangename" />
+            <result column="expchinameabbr" property="expchinameabbr" />
+            <result column="recdowntime" property="recdowntime" />
+            <result column="recfirsttime" property="recfirsttime" />
+            <result column="recid" property="recid" />
+            <result column="recupdatetime" property="recupdatetime" />
+            <result column="secuid" property="secuid" />
+            <result column="frontpurchasecode" property="frontpurchasecode" />
+            <result column="fundlevelcode" property="fundlevelcode" />
+            <result column="fundlevelmodecode" property="fundlevelmodecode" />
+            <result column="fundmanagecorp" property="fundmanagecorp" />
+            <result column="fundmanagecorpid" property="fundmanagecorpid" />
+            <result column="fundopermodecode" property="fundopermodecode" />
+            <result column="fundoperperiod" property="fundoperperiod" />
+            <result column="fundstylecode" property="fundstylecode" />
+            <result column="fundtrustee" property="fundtrustee" />
+            <result column="fundtrusteeid" property="fundtrusteeid" />
+            <result column="fundtype" property="fundtype" />
+            <result column="fundtypecode" property="fundtypecode" />
+            <result column="fundtypecodetx" property="fundtypecodetx" />
+            <result column="gfselling" property="gfselling" />
+            <result column="iffixdateopenfund" property="iffixdateopenfund" />
+            <result column="iffixed" property="iffixed" />
+            <result column="indextradedate" property="indextradedate" />
+            <result column="investfeaturecode" property="investfeaturecode" />
+            <result column="investtype" property="investtype" />
+            <result column="isallowbuy" property="isallowbuy" />
+            <result column="isallowredeem" property="isallowredeem" />
+            <result column="isexchangetrans" property="isexchangetrans" />
+            <result column="isvirtualfund" property="isvirtualfund" />
+            <result column="issuescale" property="issuescale" />
+            <result column="levelcode" property="levelcode" />
+            <result column="levelpublishdate" property="levelpublishdate" />
+            <result column="listboarcode" property="listboarcode" />
+            <result column="listboarname" property="listboarname" />
+            <result column="listdate" property="listdate" />
+            <result column="listscale" property="listscale" />
+            <result column="liststatuscode" property="liststatuscode" />
+            <result column="lstdafterrorshrnav" property="lstdafterrorshrnav" />
+            <result column="minholdshare" property="minholdshare" />
+            <result column="minperfappbalance" property="minperfappbalance" />
+            <result column="minredemptionshare" property="minredemptionshare" />
+            <result column="navtradedate" property="navtradedate" />
+            <result column="oncounter" property="oncounter" />
+            <result column="openshare" property="openshare" />
+            <result column="parvalue" property="parvalue" />
+            <result column="parvaluecrrccode" property="parvaluecrrccode" />
+            <result column="perfbenchmark" property="perfbenchmark" />
+            <result column="periodtype" property="periodtype" />
+            <result column="pinyinabbr" property="pinyinabbr" />
+            <result column="pmunitincm" property="pmunitincm" />
+            <result column="prodstatus" property="prodstatus" />
+            <result column="prodtano" property="prodtano" />
+            <result column="purchaseway" property="purchaseway" />
+            <result column="recent7dayannreturn" property="recent7dayannreturn" />
+            <result column="return1m" property="return1m" />
+            <result column="return1w" property="return1w" />
+            <result column="return1y" property="return1y" />
+            <result column="return2y" property="return2y" />
+            <result column="return3m" property="return3m" />
+            <result column="return3y" property="return3y" />
+            <result column="return5y" property="return5y" />
+            <result column="return6m" property="return6m" />
+            <result column="returntn" property="returntn" />
+            <result column="returnty" property="returnty" />
+            <result column="returntypecode" property="returntypecode" />
+            <result column="risklevel" property="risklevel" />
+            <result column="scale" property="scale" />
+            <result column="secuabbr" property="secuabbr" />
+            <result column="secumainid" property="secumainid" />
+            <result column="secutype" property="secutype" />
+            <result column="sharecaroverdate" property="sharecaroverdate" />
+            <result column="sharenav" property="sharenav" />
+            <result column="sharenavafterror" property="sharenavafterror" />
+            <result column="sharesumnav" property="sharesumnav" />
+            <result column="shrcaroverdaytypecode" property="shrcaroverdaytypecode" />
+            <result column="shrcarovermodecode" property="shrcarovermodecode" />
+            <result column="timereturn1y" property="timereturn1y" />
+            <result column="timereturn2y" property="timereturn2y" />
+            <result column="timereturn3y" property="timereturn3y" />
+            <result column="tradecode" property="tradecode" />
+            <result column="maxretracement" property="maxretracement" />
+            <result column="orgmaxpdshare" property="orgmaxpdshare" />
+            <result column="orgminfappbalance" property="orgminfappbalance" />
+            <result column="orglowlimitbalance2" property="orglowlimitbalance2" />
+            <result column="scalenoticedate" property="scalenoticedate" />
+            <result column="invmgrs" property="invmgrs" />
+            <result column="subfeeratio" property="subfeeratio" />
+            <result column="discountsubfeeratio" property="discountsubfeeratio" />
+            <result column="applyfeeratio" property="applyfeeratio" />
+            <result column="discountapplyfeeratio" property="discountapplyfeeratio" />
+            <result column="redeemfeeratio" property="redeemfeeratio" />
+            <result column="discountredeemfeeratio" property="discountredeemfeeratio" />
+            <result column="trusteeshipfeeratio" property="trusteeshipfeeratio" />
+            <result column="managefeeratio" property="managefeeratio" />
+            <result column="rewardfeeratio" property="rewardfeeratio" />
+            <result column="chargetype" property="chargetype" />
+            <result column="bonusmethod" property="bonusmethod" />
+            <result column="redemptionunit" property="redemptionunit" />
+            <result column="maxorgredshare" property="maxorgredshare" />
+            <result column="assetrecommend" property="assetrecommend" />
+            <result column="wealthrecommend" property="wealthrecommend" />
+            <result column="newproduct" property="newproduct" />
+            <result column="assetstype" property="assetstype" />
+            <result column="endfundassetnav" property="endfundassetnav" />
+            <result column="enddate" property="enddate" />
+            <result column="sync_stat" property="syncStat" />
+            <result column="record_date" property="recordDate" />
+            <result column="record_stat" property="recordStat" />
+            <result column="label_name" property="labelName" />
+            <result column="comment_title" property="commentTitle" />
+            <result column="comm_explain" property="commExplain" />
+            <result column="sub_label" property="subLabel" />
+            <result column="purchasecodetype" property="purchasecodetype" />
+            <result column="interfacenames" property="interfacenames" />
+            <result column="orgtradecode" property="orgtradecode" />
+            <result column="introduce" property="introduce" />
+            <result column="reason" property="reason" />
+            <result column="bondtypecode" property="bondtypecode" />
+            <result column="moneydate" property="moneydate" />
+            <result column="orgoneappmaxbalance" property="orgoneappmaxbalance" />
+            <result column="orgappendbalance" property="orgappendbalance" />
+            <result column="orgonesubmaxbalance" property="orgonesubmaxbalance" />
+            <result column="orglowlimitbalance" property="orglowlimitbalance" />
+            <result column="withdrawdate" property="withdrawdate" />
+            <result column="ncdindexfund" property="ncdindexfund" />
+            <result column="opendaystartdate" property="opendaystartdate" />
+            <result column="closeperiod" property="closeperiod" />
+            <result column="stkid" property="stkid" />
+            <result column="productid" property="productid" />
+            <result column="abroadasset" property="abroadasset" />
+            <result column="accumnav" property="accumnav" />
+            <result column="additionamount" property="additionamount" />
+            <result column="agrtype" property="agrtype" />
+            <result column="approtype" property="approtype" />
+            <result column="assetalltype" property="assetalltype" />
+            <result column="assetmgrtype" property="assetmgrtype" />
+            <result column="isquoted" property="isquoted" />
+            <result column="sellsize" property="sellsize" />
+            <result column="assetonetype" property="assetonetype" />
+            <result column="assetstype" property="assetstype" />
+            <result column="benchmark" property="benchmark" />
+            <result column="chiname" property="chiname" />
+            <result column="chinameabbr" property="chinameabbr" />
+            <result column="chispelling" property="chispelling" />
+            <result column="closedate" property="closedate" />
+            <result column="composetag" property="composetag" />
+            <result column="connectedcode" property="connectedcode" />
+            <result column="currencytype" property="currencytype" />
+            <result column="customizedornot" property="customizedornot" />
+            <result column="datastatus" property="datastatus" />
+            <result column="dateraise" property="dateraise" />
+            <result column="firstamount" property="firstamount" />
+            <result column="forcustomertype" property="forcustomertype" />
+            <result column="gfselling" property="gfselling" />
+            <result column="hedgingflag" property="hedgingflag" />
+            <result column="incometype" property="incometype" />
+            <result column="interestdays" property="interestdays" />
+            <result column="investstyle" property="investstyle" />
+            <result column="investtype" property="investtype" />
+            <result column="invmgrs" property="invmgrs" />
+            <result column="isssize" property="isssize" />
+            <result column="issuecompany" property="issuecompany" />
+            <result column="issuer" property="issuer" />
+            <result column="mgmtperiod" property="mgmtperiod" />
+            <result column="monraise" property="monraise" />
+            <result column="monraise3" property="monraise3" />
+            <result column="monraise6" property="monraise6" />
+            <result column="raiseoneyear" property="raiseoneyear" />
+            <result column="prodterm" property="prodterm" />
+            <result column="navdate" property="navdate" />
+            <result column="parvalue" property="parvalue" />
+            <result column="parentsecucode" property="parentsecucode" />
+            <result column="payway" property="payway" />
+            <result column="perfben" property="perfben" />
+            <result column="perfbenshow" property="perfbenshow" />
+            <result column="periodtype" property="periodtype" />
+            <result column="prodmodel" property="prodmodel" />
+            <result column="prodoperationtype" property="prodoperationtype" />
+            <result column="prodreleaseobject" property="prodreleaseobject" />
+            <result column="prodstatus" property="prodstatus" />
+            <result column="prodtano" property="prodtano" />
+            <result column="productsubtype" property="productsubtype" />
+            <result column="psecutype" property="psecutype" />
+            <result column="purchaseway" property="purchaseway" />
+            <result column="quantitativeflag" property="quantitativeflag" />
+            <result column="raise" property="raise" />
+            <result column="raisedate" property="raisedate" />
+            <result column="reviewstatus" property="reviewstatus" />
+            <result column="risklevel" property="risklevel" />
+            <result column="secucode" property="secucode" />
+            <result column="secutype" property="secutype" />
+            <result column="setupdate" property="setupdate" />
+            <result column="strategy" property="strategy" />
+            <result column="subcompanyornot" property="subcompanyornot" />
+            <result column="unitnav" property="unitnav" />
+            <result column="updatetime" property="updatetime" />
+            <result column="valuedate" property="valuedate" />
+            <result column="wealthtype" property="wealthtype" />
+            <result column="withdrawtype" property="withdrawtype" />
+            <result column="yearraise" property="yearraise" />
+            <result column="orgmaxpdshare" property="orgmaxpdshare" />
+            <result column="isallowbuy" property="isallowbuy" />
+            <result column="orgminfappbalance" property="orgminfappbalance" />
+            <result column="orglowlimitbalance2" property="orglowlimitbalance2" />
+            <result column="yearraise1" property="yearraise1" />
+            <result column="subfeeratio" property="subfeeratio" />
+            <result column="discountsubfeeratio" property="discountsubfeeratio" />
+            <result column="applyfeeratio" property="applyfeeratio" />
+            <result column="discountapplyfeeratio" property="discountapplyfeeratio" />
+            <result column="redeemfeeratio" property="redeemfeeratio" />
+            <result column="discountredeemfeeratio" property="discountredeemfeeratio" />
+            <result column="trusteeshipfeeratio" property="trusteeshipfeeratio" />
+            <result column="managefeeratio" property="managefeeratio" />
+            <result column="rewardfeeratio" property="rewardfeeratio" />
+            <result column="redemptionunit" property="redemptionunit" />
+            <result column="maxorgredshare" property="maxorgredshare" />
+            <result column="assetrecommend" property="assetrecommend" />
+            <result column="wealthrecommend" property="wealthrecommend" />
+            <result column="newproduct" property="newproduct" />
+            <result column="incomeratetype" property="incomeratetype" />
+            <result column="maxcompref" property="maxcompref" />
+            <result column="mincompref" property="mincompref" />
+            <result column="ytm" property="ytm" />
+            <result column="buydate" property="buydate" />
+            <result column="permyriadincome" property="permyriadincome" />
+            <result column="sevenincomeratio" property="sevenincomeratio" />
+            <result column="prodpreratio" property="prodpreratio" />
+            <result column="total_quota" property="totalQuota" />
+            <result column="sale_quota" property="saleQuota" />
+            <result column="total_holder_num" property="totalHolderNum" />
+            <result column="current_holder_num" property="currentHolderNum" />
+            <result column="t2type" property="t2type" />
+            <result column="sync_stat" property="syncStat" />
+            <result column="record_date" property="recordDate" />
+            <result column="record_stat" property="recordStat" />
+            <result column="label_name" property="labelName" />
+            <result column="comment_title" property="commentTitle" />
+            <result column="comm_explain" property="commExplain" />
+            <result column="sub_label" property="subLabel" />
+            <result column="interfacenames" property="interfacenames" />
+            <result column="referpublicprod" property="referpublicprod" />
+            <result column="introduce" property="introduce" />
+            <result column="reason" property="reason" />
+            <result column="orgoneappmaxbalance" property="orgoneappmaxbalance" />
+            <result column="orgappendbalance" property="orgappendbalance" />
+            <result column="orgonesubmaxbalance" property="orgonesubmaxbalance" />
+            <result column="orglowlimitbalance" property="orglowlimitbalance" />
+            <result column="ncdindexfund" property="ncdindexfund" />
+            <result column="taskgroup" property="taskgroup" />
+            <result column="taskid" property="taskid" />
+            <result column="execorder" property="execorder" />
+            <result column="pretask" property="pretask" />
+            <result column="status" property="status" />
+            <result column="stopflag" property="stopflag" />
+            <result column="lbmid" property="lbmid" />
+            <result column="timeout" property="timeout" />
+            <result column="busiparam" property="busiparam" />
+            <result column="failtype" property="failtype" />
+            <result column="succtype" property="succtype" />
+            <result column="roundfailtimes" property="roundfailtimes" />
+            <result column="roundfailmax" property="roundfailmax" />
+            <result column="roundruning" property="roundruning" />
+            <result column="execstat" property="execstat" />
+            <result column="taskgroup" property="taskgroup" />
+            <result column="taskid" property="taskid" />
+            <result column="busidate" property="busidate" />
+            <result column="operid" property="operid" />
+            <result column="opertime" property="opertime" />
+            <result column="pass_flag" property="passFlag" />
+            <result column="remark" property="remark" />
+            <result column="rank_mode" property="rankMode" />
+            <result column="prd_type" property="prdType" />
+            <result column="sub_prd_type" property="subPrdType" />
+            <result column="period" property="period" />
+            <result column="row_no" property="rowNo" />
+            <result column="prd_no" property="prdNo" />
+            <result column="prd_name" property="prdName" />
+            <result column="trd_bal" property="trdBal" />
+            <result column="trd_cust" property="trdCust" />
+            <result column="ror_1m" property="ror1m" />
+            <result column="ror_3m" property="ror3m" />
+            <result column="ror_ths_year" property="rorThsYear" />
+            <result column="benchmark" property="benchmark" />
+            <result column="ivst_term" property="ivstTerm" />
+            <result column="setup_date" property="setupDate" />
+            <result column="close_date" property="closeDate" />
+            <result column="per_myriad_income" property="perMyriadIncome" />
+            <result column="annualized_yield_7d" property="annualizedYield7d" />
+            <result column="annualized_yield_1m" property="annualizedYield1m" />
+            <result column="busi_date" property="busiDate" />
+            <result column="infoid" property="infoid" />
+            <result column="title" property="title" />
+            <result column="roundup" property="roundup" />
+            <result column="url" property="url" />
+            <result column="sentiment_score" property="sentimentScore" />
+            <result column="sync_date" property="syncDate" />
+            <result column="sync_time" property="syncTime" />
+            <result column="publish_date" property="publishDate" />
+            <result column="publish_time" property="publishTime" />
+            <result column="infoid" property="infoid" />
+            <result column="userid" property="userid" />
+            <result column="useful" property="useful" />
+            <result column="text" property="text" />
+            <result column="feedback_date" property="feedbackDate" />
+            <result column="feedback_time" property="feedbackTime" />
+            <result column="infoid" property="infoid" />
+            <result column="parent_stkid" property="parentStkid" />
+            <result column="stkid" property="stkid" />
+            <result column="stkcode" property="stkcode" />
+            <result column="market" property="market" />
+            <result column="relationship" property="relationship" />
+            <result column="infoid" property="infoid" />
+            <result column="stkid" property="stkid" />
+            <result column="stkcode" property="stkcode" />
+            <result column="market" property="market" />
+            <result column="env_type" property="envType" />
+            <result column="param_key" property="paramKey" />
+            <result column="param_value" property="paramValue" />
+            <result column="funcid" property="funcid" />
+            <result column="funclevel" property="funclevel" />
+            <result column="busidate" property="busidate" />
+            <result column="phydate" property="phydate" />
+            <result column="phytime" property="phytime" />
+            <result column="bpnodeid" property="bpnodeid" />
+            <result column="funcid" property="funcid" />
+            <result column="calltimes" property="calltimes" />
+            <result column="maxcost" property="maxcost" />
+            <result column="avgcost" property="avgcost" />
+            <result column="interface_id" property="interfaceId" />
+            <result column="interface_path" property="interfacePath" />
+            <result column="interface_name" property="interfaceName" />
+            <result column="system_id" property="systemId" />
+            <result column="system_gid" property="systemGid" />
+            <result column="content_type" property="contentType" />
+            <result column="method" property="method" />
+            <result column="timeout" property="timeout" />
+            <result column="target_msgtype" property="targetMsgtype" />
+            <result column="ext_uri_param" property="extUriParam" />
+            <result column="ext_body_param" property="extBodyParam" />
+            <result column="is_link_check" property="isLinkCheck" />
+            <result column="system_id" property="systemId" />
+            <result column="system_gid" property="systemGid" />
+            <result column="funcid" property="funcid" />
+            <result column="pathtype" property="pathtype" />
+            <result column="system_path" property="systemPath" />
+            <result column="app_id" property="appId" />
+            <result column="app_key" property="appKey" />
+            <result column="system_name" property="systemName" />
+            <result column="is_open" property="isOpen" />
+            <result column="certificate" property="certificate" />
+            <result column="is_link_check" property="isLinkCheck" />
+            <result column="system_id" property="systemId" />
+            <result column="system_gid" property="systemGid" />
+            <result column="last_monitor_date" property="lastMonitorDate" />
+            <result column="last_monitor_time" property="lastMonitorTime" />
+            <result column="last_link_status" property="lastLinkStatus" />
+            <result column="system_busidate" property="systemBusidate" />
+            <result column="remark" property="remark" />
+            <result column="log_date" property="logDate" />
+            <result column="log_sno" property="logSno" />
+            <result column="system_id" property="systemId" />
+            <result column="system_gid" property="systemGid" />
+            <result column="last_monitor_date" property="lastMonitorDate" />
+            <result column="last_monitor_time" property="lastMonitorTime" />
+            <result column="last_link_status" property="lastLinkStatus" />
+            <result column="system_busidate" property="systemBusidate" />
+            <result column="remark" property="remark" />
+            <result column="bsflag" property="bsflag" />
+            <result column="market" property="market" />
+            <result column="stktype" property="stktype" />
+            <result column="trdid" property="trdid" />
+            <result column="stklevel" property="stklevel" />
+            <result column="stkblock" property="stkblock" />
+            <result column="fundkind" property="fundkind" />
+            <result column="errmsg" property="errmsg" />
+            <result column="SYSTEM_ID" property="systemId" />
+            <result column="SYSTEM_NAME" property="systemName" />
+            <result column="APP_ID" property="appId" />
+            <result column="APP_KEY" property="appKey" />
+            <result column="AUTH_TIMEOUT" property="authTimeout" />
+            <result column="AUTH_FLAG" property="authFlag" />
+            <result column="APP_TYPE" property="appType" />
+            <result column="ANS_TYPE" property="ansType" />
+            <result column="STATUS" property="status" />
+            <result column="SYSTEM_ID" property="systemId" />
+            <result column="INTERFACE_ID" property="interfaceId" />
+            <result column="FLOW_LIMIT" property="flowLimit" />
+            <result column="STATUS" property="status" />
+            <result column="INTERFACE_ID" property="interfaceId" />
+            <result column="INTERFACE_PATH" property="interfacePath" />
+            <result column="INTERFACE_NAME" property="interfaceName" />
+            <result column="FUNCID" property="funcid" />
+            <result column="METHOD" property="method" />
+            <result column="EXT_URI_PARAM" property="extUriParam" />
+            <result column="EXT_BODY_PARAM" property="extBodyParam" />
+            <result column="STATUS" property="status" />
+            <result column="orgid" property="orgid" />
+            <result column="feeid" property="feeid" />
+            <result column="stkcode" property="stkcode" />
+            <result column="market" property="market" />
+            <result column="etfcode0" property="etfcode0" />
+            <result column="fee_sxf" property="feeSxf" />
+            <result column="fee_sxf_min" property="feeSxfMin" />
+            <result column="fee_yhs" property="feeYhs" />
+            <result column="fee_etf" property="feeEtf" />
+            <result column="fee_etf_min" property="feeEtfMin" />
+            <result column="fee_fund" property="feeFund" />
+            <result column="fee_fund_min" property="feeFundMin" />
+            <result column="fee_ghf" property="feeGhf" />
+            <result column="fee_other" property="feeOther" />
+            <result column="remark" property="remark" />
+            <result column="orgid" property="orgid" />
+            <result column="menuid" property="menuid" />
+            <result column="bpnode" property="bpnode" />
+            <result column="srvgroup" property="srvgroup" />
+            <result column="servertypes" property="servertypes" />
+            <result column="serverscount" property="serverscount" />
+            <result column="stkcode" property="stkcode" />
+            <result column="market" property="market" />
+            <result column="tradingtype" property="tradingtype" />
+            <result column="priceunit" property="priceunit" />
+            <result column="maxriseprice" property="maxriseprice" />
+            <result column="maxdownprice" property="maxdownprice" />
+            <result column="maxbuyqty" property="maxbuyqty" />
+            <result column="maxsaleqty" property="maxsaleqty" />
+            <result column="minbuyqty" property="minbuyqty" />
+            <result column="minsaleqty" property="minsaleqty" />
+            <result column="buyunit" property="buyunit" />
+            <result column="saleunit" property="saleunit" />
+            <result column="updatedate" property="updatedate" />
+            <result column="curr_type" property="currType" />
+            <result column="calc_type" property="calcType" />
+            <result column="rate_type" property="rateType" />
+            <result column="calc_rate" property="calcRate" />
+            <result column="updatedate" property="updatedate" />
+            <result column="updatetime" property="updatetime" />
+            <result column="subeventtype" property="subeventtype" />
+            <result column="eventtype" property="eventtype" />
+            <result column="busitype" property="busitype" />
+            <result column="subbusitype" property="subbusitype" />
+            <result column="category" property="category" />
+            <result column="is_make_event" property="isMakeEvent" />
+            <result column="is_remind" property="isRemind" />
+            <result column="goto_menuid" property="gotoMenuid" />
+            <result column="is_valid" property="isValid" />
+            <result column="eventid" property="eventid" />
+            <result column="parentid" property="parentid" />
+            <result column="indexid" property="indexid" />
+            <result column="userid" property="userid" />
+            <result column="projectids" property="projectids" />
+            <result column="orgid" property="orgid" />
+            <result column="title" property="title" />
+            <result column="subeventtype" property="subeventtype" />
+            <result column="source" property="source" />
+            <result column="notify_mode" property="notifyMode" />
+            <result column="voice" property="voice" />
+            <result column="allday" property="allday" />
+            <result column="series" property="series" />
+            <result column="abstract" property="abstract" />
+            <result column="begindate" property="begindate" />
+            <result column="begintime" property="begintime" />
+            <result column="enddate" property="enddate" />
+            <result column="endtime" property="endtime" />
+            <result column="recur_enddate" property="recurEnddate" />
+            <result column="rule" property="rule" />
+            <result column="msg_createdate" property="msgCreatedate" />
+            <result column="msg_createtime" property="msgCreatetime" />
+            <result column="msg_createstat" property="msgCreatestat" />
+            <result column="createdate" property="createdate" />
+            <result column="createtime" property="createtime" />
+            <result column="upddate" property="upddate" />
+            <result column="updtime" property="updtime" />
+            <result column="expiredate" property="expiredate" />
+            <result column="stat" property="stat" />
+            <result column="msgtitle" property="msgtitle" />
+            <result column="eventid" property="eventid" />
+            <result column="detail" property="detail" />
+            <result column="storetype" property="storetype" />
+            <result column="expiredate" property="expiredate" />
+            <result column="msgid" property="msgid" />
+            <result column="eventid" property="eventid" />
+            <result column="parentid" property="parentid" />
+            <result column="userid" property="userid" />
+            <result column="projectids" property="projectids" />
+            <result column="orgid" property="orgid" />
+            <result column="title" property="title" />
+            <result column="subeventtype" property="subeventtype" />
+            <result column="source" property="source" />
+            <result column="notify_mode" property="notifyMode" />
+            <result column="voice" property="voice" />
+            <result column="allday" property="allday" />
+            <result column="mustdo" property="mustdo" />
+            <result column="abstract" property="abstract" />
+            <result column="notifydate" property="notifydate" />
+            <result column="notifytime" property="notifytime" />
+            <result column="createdate" property="createdate" />
+            <result column="createtime" property="createtime" />
+            <result column="upddate" property="upddate" />
+            <result column="updtime" property="updtime" />
+            <result column="stat" property="stat" />
+            <result column="msgid" property="msgid" />
+            <result column="detail" property="detail" />
+            <result column="storetype" property="storetype" />
+            <result column="createdate" property="createdate" />
+            <result column="userid" property="userid" />
+            <result column="subeventtype" property="subeventtype" />
+            <result column="attention" property="attention" />
+            <result column="voice" property="voice" />
+            <result column="notify_mode" property="notifyMode" />
+            <result column="upddate" property="upddate" />
+            <result column="updtime" property="updtime" />
+            <result column="msgid" property="msgid" />
+            <result column="eventid" property="eventid" />
+            <result column="userid" property="userid" />
+            <result column="notifydate" property="notifydate" />
+            <result column="notifytime" property="notifytime" />
+            <result column="netaddr" property="netaddr" />
+            <result column="sessionid" property="sessionid" />
+            <result column="msg_no" property="msgNo" />
+            <result column="busidate" property="busidate" />
+            <result column="busitime" property="busitime" />
+            <result column="subeventtype" property="subeventtype" />
+            <result column="source" property="source" />
+            <result column="busidate" property="busidate" />
+            <result column="operid" property="operid" />
+            <result column="opertime" property="opertime" />
+            <result column="pass_flag" property="passFlag" />
+            <result column="remark" property="remark" />
+            <result column="stkcode" property="stkcode" />
+            <result column="market" property="market" />
+            <result column="stkid" property="stkid" />
+            <result column="bankstkcode" property="bankstkcode" />
+            <result column="simplename" property="simplename" />
+            <result column="extsimplename" property="extsimplename" />
+            <result column="marketdate" property="marketdate" />
+            <result column="ticketprice" property="ticketprice" />
+            <result column="issueprice" property="issueprice" />
+            <result column="ticketrate" property="ticketrate" />
+            <result column="begindate" property="begindate" />
+            <result column="enddate" property="enddate" />
+            <result column="payinterval" property="payinterval" />
+            <result column="existlimit" property="existlimit" />
+            <result column="limitunit" property="limitunit" />
+            <result column="fullname" property="fullname" />
+            <result column="bondtype" property="bondtype" />
+            <result column="ratetype" property="ratetype" />
+            <result column="issuetype" property="issuetype" />
+            <result column="issuer" property="issuer" />
+            <result column="issuertype" property="issuertype" />
+            <result column="mainrating" property="mainrating" />
+            <result column="facilityrating" property="facilityrating" />
+            <result column="ratingorg" property="ratingorg" />
+            <result column="isthismarket" property="isthismarket" />
+            <result column="circulation" property="circulation" />
+            <result column="specbondtype" property="specbondtype" />
+            <result column="structgrading" property="structgrading" />
+            <result column="absname" property="absname" />
+            <result column="tradetype" property="tradetype" />
+            <result column="settletype" property="settletype" />
+            <result column="pricetype" property="pricetype" />
+            <result column="appropriateness" property="appropriateness" />
+            <result column="spectrans" property="spectrans" />
+            <result column="isbasemarkettype" property="isbasemarkettype" />
+            <result column="delistdate" property="delistdate" />
+            <result column="rightypes" property="rightypes" />
+            <result column="putright" property="putright" />
+            <result column="redeemright" property="redeemright" />
+            <result column="underwriter" property="underwriter" />
+            <result column="beginissuedate" property="beginissuedate" />
+            <result column="endissuedate" property="endissuedate" />
+            <result column="outimpawndate" property="outimpawndate" />
+            <result column="inimpawndate" property="inimpawndate" />
+            <result column="exchrate" property="exchrate" />
+            <result column="isincode" property="isincode" />
+            <result column="putbegindate" property="putbegindate" />
+            <result column="putenddate" property="putenddate" />
+            <result column="putassetdate" property="putassetdate" />
+            <result column="putcancelbegdate" property="putcancelbegdate" />
+            <result column="putcancelenddate" property="putcancelenddate" />
+            <result column="istransput" property="istransput" />
+            <result column="transstktype" property="transstktype" />
+            <result column="transstkcode" property="transstkcode" />
+            <result column="transstkname" property="transstkname" />
+            <result column="transprice" property="transprice" />
+            <result column="transstkbegdate" property="transstkbegdate" />
+            <result column="transstkenddate" property="transstkenddate" />
+            <result column="exchangestkcode" property="exchangestkcode" />
+            <result column="exchangestkname" property="exchangestkname" />
+            <result column="exchangeprice" property="exchangeprice" />
+            <result column="exchangebegdate" property="exchangebegdate" />
+            <result column="exchangeenddate" property="exchangeenddate" />
+            <result column="BUSIDATE" property="busidate" />
+            <result column="MARKET" property="market" />
+            <result column="STKCODE" property="stkcode" />
+            <result column="MAND_PUT_PD" property="mandPutPd" />
+            <result column="MAND_PUT_PRIC" property="mandPutPric" />
+            <result column="MAND_PUT_START_DT" property="mandPutStartDt" />
+            <result column="MAND_PUT_END_DT" property="mandPutEndDt" />
+            <result column="MAND_PUT_TEXT" property="mandPutText" />
+            <result column="COND_PUT_START_DT" property="condPutStartDt" />
+            <result column="COND_PUT_END_DT" property="condPutEndDt" />
+            <result column="COND_REDP_START_DT" property="condRedpStartDt" />
+            <result column="COND_REDP_END_DT" property="condRedpEndDt" />
+            <result column="REDP_TERM_PRIC" property="redpTermPric" />
+            <result column="BUSIDATE" property="busidate" />
+            <result column="MARKET" property="market" />
+            <result column="STKCODE" property="stkcode" />
+            <result column="PUT_ANN_DT" property="putAnnDt" />
+            <result column="PUT_START_DT" property="putStartDt" />
+            <result column="PUT_END_DT" property="putEndDt" />
+            <result column="FND_ARIVL_DT" property="fndArivlDt" />
+            <result column="REPO_PRIC" property="repoPric" />
+            <result column="PUT_EXEC_DT" property="putExecDt" />
+            <result column="PUT_AMT" property="putAmt" />
+            <result column="PUT_CD" property="putCd" />
+            <result column="PUT_DT" property="putDt" />
+            <result column="BUSIDATE" property="busidate" />
+            <result column="MARKET" property="market" />
+            <result column="STKCODE" property="stkcode" />
+            <result column="TYPE_CD" property="typeCd" />
+            <result column="PLG_NAME" property="plgName" />
+            <result column="VLD_FLAG" property="vldFlag" />
+            <result column="REMARK" property="remark" />
+            <result column="BUSIDATE" property="busidate" />
+            <result column="MARKET" property="market" />
+            <result column="STKCODE" property="stkcode" />
+            <result column="IVSTR_ID" property="ivstrId" />
+            <result column="IVSTR_TYPE" property="ivstrType" />
+            <result column="IVSTR_NAME" property="ivstrName" />
+            <result column="PLAC_SHR" property="placShr" />
+            <result column="LOCK_MTH" property="lockMth" />
+            <result column="ACTL_ORD_SHR" property="actlOrdShr" />
+            <result column="ANN_DT" property="annDt" />
+            <result column="END_DT" property="endDt" />
+            <result column="REFND_PAYBK_AMT" property="refndPaybkAmt" />
+            <result column="SHR_TYPE" property="shrType" />
+            <result column="TRDB_DT" property="trdbDt" />
+            <result column="LAST_HOLD_SHR" property="lastHoldShr" />
+            <result column="LAST_HOLD_SHR_FIN" property="lastHoldShrFin" />
+            <result column="IVSTR_TYPE_CD" property="ivstrTypeCd" />
+            <result column="ANN_IVSTR_NAME" property="annIvstrName" />
+            <result column="BUSIDATE" property="busidate" />
+            <result column="MARKET" property="market" />
+            <result column="STKCODE" property="stkcode" />
+            <result column="ANN_DT" property="annDt" />
+            <result column="COVT_CD" property="covtCd" />
+            <result column="COVT_ABBR" property="covtAbbr" />
+            <result column="COVT_PRIC" property="covtPric" />
+            <result column="RELA_SECU_ID" property="relaSecuId" />
+            <result column="RELA_SCR_CD" property="relaScrCd" />
+            <result column="COVT_START_DT" property="covtStartDt" />
+            <result column="COVT_END_DT" property="covtEndDt" />
+            <result column="LAST_TRD_DT" property="lastTrdDt" />
+            <result column="FRC_COVT_DT" property="frcCovtDt" />
+            <result column="FRC_COVT_PRIC" property="frcCovtPric" />
+            <result column="FRC_FLAG" property="frcFlag" />
+            <result column="FRC_COVT_RSN" property="frcCovtRsn" />
+            <result column="BUSIDATE" property="busidate" />
+            <result column="MARKET" property="market" />
+            <result column="STKCODE" property="stkcode" />
+            <result column="DEBT_RT_DEBT_REG_DT" property="debtRtDebtRegDt" />
+            <result column="THIM_IR_PRD_BGN_DT" property="thimIrPrdBgnDt" />
+            <result column="THIM_IR_PRD_END_DT" property="thimIrPrdEndDt" />
+            <result column="INTA_BGN_DT" property="intaBgnDt" />
+            <result column="INTA_END_DT" property="intaEndDt" />
+            <result column="INTA_CASH_MODE" property="intaCashMode" />
+            <result column="CASH_REG_DT" property="cashRegDt" />
+            <result column="CASH_BGN_DT" property="cashBgnDt" />
+            <result column="CASH_END_DT" property="cashEndDt" />
+            <result column="CASH_CLR_DT" property="cashClrDt" />
+            <result column="EX_RT_DT" property="exRtDt" />
+            <result column="OHY_PAY_INT_BTAX" property="ohyPayIntBtax" />
+            <result column="OHY_PAY_INT_AFT_TAX" property="ohyPayIntAftTax" />
+            <result column="OHY_CASH_PRINP" property="ohyCashPrinp" />
+            <result column="OHY_CASH_PRINP_INT" property="ohyCashPrinpInt" />
+            <result column="OHY_IA_CASE_NETPRICE" property="ohyIaCaseNetprice" />
+            <result column="THIM_CASH_PRINP" property="thimCashPrinp" />
+            <result column="THIM_PAY_INT" property="thimPayInt" />
+            <result column="CASH_PRINP_INT" property="cashPrinpInt" />
+            <result column="THIM_BACK_PRINC_RATI" property="thimBackPrincRati" />
+            <result column="THIM_BACK_PRINC_AMT" property="thimBackPrincAmt" />
+            <result column="THIM_INTP_AND" property="thimIntpAnd" />
+            <result column="THIM_CASH_PRINP_AND" property="thimCashPrinpAnd" />
+            <result column="CASH_GAMT" property="cashGamt" />
+            <result column="BUSIDATE" property="busidate" />
+            <result column="MARKET" property="market" />
+            <result column="STKCODE" property="stkcode" />
+            <result column="FULL_NAME" property="fullName" />
+            <result column="ABBR_NAME" property="abbrName" />
+            <result column="ABBR_PINYIN" property="abbrPinyin" />
+            <result column="LIST_ANN_DATE" property="listAnnDate" />
+            <result column="LIST_DATE" property="listDate" />
+            <result column="DELIST" property="delist" />
+            <result column="NET_ISS_END_DATE" property="netIssEndDate" />
+            <result column="NET_ISS_BEGIN_DATE" property="netIssBeginDate" />
+            <result column="NET_ISS_AMOUNT" property="netIssAmount" />
+            <result column="NET_ISS_SCRP_CD" property="netIssScrpCd" />
+            <result column="PAY_INTR_FREQ" property="payIntrFreq" />
+            <result column="BOND_TERM_YEAR" property="bondTermYear" />
+            <result column="CASH_REG_BEGIN_DATE" property="cashRegBeginDate" />
+            <result column="CASH_DATE" property="cashDate" />
+            <result column="IR_INTRO" property="irIntro" />
+            <result column="IR_SPREAD" property="irSpread" />
+            <result column="IR_TYPE" property="irType" />
+            <result column="DUE_DATE" property="dueDate" />
+            <result column="REF_YIELD" property="refYield" />
+            <result column="ISS_BEGIN_DATE" property="issBeginDate" />
+            <result column="ISS_END_DATE" property="issEndDate" />
+            <result column="ISS_COUP_RATE" property="issCoupRate" />
+            <result column="ISS_ANN_DATE" property="issAnnDate" />
+            <result column="ISS_METHOD" property="issMethod" />
+            <result column="ISSR_NAME" property="issrName" />
+            <result column="ISSR_NO" property="issrNo" />
+            <result column="ISSR_TYPE" property="issrType" />
+            <result column="ISS_OBJ" property="issObj" />
+            <result column="ISS_AMT_UL" property="issAmtUl" />
+            <result column="ISS_BOND_RATE" property="issBondRate" />
+            <result column="ISS_PRIC" property="issPric" />
+            <result column="ACTL_ISS_AMTS" property="actlIssAmts" />
+            <result column="PLAN_ISS_AMTS" property="planIssAmts" />
+            <result column="PAR_VAL" property="parVal" />
+            <result column="LAST_PAR_VAL" property="lastParVal" />
+            <result column="INTA_END_DATE" property="intaEndDate" />
+            <result column="INTA_BEGIN_DATE" property="intaBeginDate" />
+            <result column="INTA_METHOD" property="intaMethod" />
+            <result column="INTA_BASIC" property="intaBasic" />
+            <result column="FORMER_BOND_CD" property="formerBondCd" />
+            <result column="BUSIDATE" property="busidate" />
+            <result column="MARKET" property="market" />
+            <result column="STKCODE" property="stkcode" />
+            <result column="OBJ_NAME" property="objName" />
+            <result column="ANN_DATE" property="annDate" />
+            <result column="RAT_DATE" property="ratDate" />
+            <result column="RAT_ORG_CD" property="ratOrgCd" />
+            <result column="RAT_ORG_NAME" property="ratOrgName" />
+            <result column="CRED_RAT" property="credRat" />
+            <result column="RAT_INTRO" property="ratIntro" />
+            <result column="PREV_CRED_RAT" property="prevCredRat" />
+            <result column="RATING_VLD_END_DATE" property="ratingVldEndDate" />
+            <result column="BUSIDATE" property="busidate" />
+            <result column="MARKET" property="market" />
+            <result column="STKCODE" property="stkcode" />
+            <result column="REDP_DT" property="redpDt" />
+            <result column="REDP_PRIC" property="redpPric" />
+            <result column="REDP_ANN_DT" property="redpAnnDt" />
+            <result column="EXEC_RSLT_ANN_DT" property="execRsltAnnDt" />
+            <result column="REDP_TOT_VOL" property="redpTotVol" />
+            <result column="PUB_REDP_DT" property="pubRedpDt" />
+            <result column="REDP_RSN" property="redpRsn" />
+            <result column="REDP_ACCT_DT" property="redpAcctDt" />
+            <result column="REDP_REG_DT" property="redpRegDt" />
+            <result column="REDP_NET_PRIC" property="redpNetPric" />
+            <result column="BUSIDATE" property="busidate" />
+            <result column="MARKET" property="market" />
+            <result column="STKCODE" property="stkcode" />
+            <result column="DEFLT_DATE" property="defltDate" />
+            <result column="ABBR_NAME" property="abbrName" />
+            <result column="ANN_DATE" property="annDate" />
+            <result column="DEFLT_TYPE" property="defltType" />
+            <result column="DEFLT_RSN" property="defltRsn" />
+            <result column="DEFLT_DATE_BOND_BAL" property="defltDateBondBal" />
+            <result column="DEFLT_DATE_PAYABLECAPITAL" property="defltDatePayablecapital" />
+            <result column="DEFLT_DATE_PAYABLEINTEREST" property="defltDatePayableinterest" />
+            <result column="DEFLT_DATE_PAYABLE_CAP_INT" property="defltDatePayableCapInt" />
+            <result column="DEFLT_DATE_PAYMENTCAPITAL" property="defltDatePaymentcapital" />
+            <result column="DEFLT_DATE_PAYMENTINTEREST" property="defltDatePaymentinterest" />
+            <result column="DEFLT_DATE_PAYMENT_CAP_INT" property="defltDatePaymentCapInt" />
+            <result column="DEFLT_DATE_BOND_BAL1" property="defltDateBondBal1" />
+            <result column="BUSIDATE" property="busidate" />
+            <result column="MARKET" property="market" />
+            <result column="STKCODE" property="stkcode" />
+            <result column="GUAR_AGY_SHT" property="guarAgySht" />
+            <result column="GUAR_AGY_SHT_ABB" property="guarAgyShtAbb" />
+            <result column="ANN_DATE" property="annDate" />
+            <result column="LIST_NTC_DATE" property="listNtcDate" />
+            <result column="LIST_DATE" property="listDate" />
+            <result column="INIT_TRAN_PRIC" property="initTranPric" />
+            <result column="INIT_TRAN_PRIC_PRE_RATI" property="initTranPricPreRati" />
+            <result column="ISS_NTC_DATE" property="issNtcDate" />
+            <result column="ISS_RLST_NTC_DATE" property="issRlstNtcDate" />
+            <result column="OSH_PRIO_PLAC_DATE" property="oshPrioPlacDate" />
+            <result column="OSH_PRIO_PLAC_EQUI_REG_DATE" property="oshPrioPlacEquiRegDate" />
+            <result column="OSH_PRIO_PLAC_PAY_DATE" property="oshPrioPlacPayDate" />
+            <result column="OSH_PRIO_PLAC_CD" property="oshPrioPlacCd" />
+            <result column="OSH_PRIO_PLAC_ABBR" property="oshPrioPlacAbbr" />
+            <result column="OSH_PRIO_PLAC_PRIC" property="oshPrioPlacPric" />
+            <result column="OSH_PRIO_PLAC_RATI_DEN" property="oshPrioPlacRatiDen" />
+            <result column="OSH_PRIO_PLAC_RATI_MOLE" property="oshPrioPlacRatiMole" />
+            <result column="ONLE_ISS_DATE" property="onleIssDate" />
+            <result column="ONLE_ISS_PURCH_CD" property="onleIssPurchCd" />
+            <result column="ONLE_ISS_PURCH_NAME" property="onleIssPurchName" />
+            <result column="ONLE_ISS_PURCH_PRIC" property="onleIssPurchPric" />
+            <result column="ONLE_ISS_NUM" property="onleIssNum" />
+            <result column="TRAN_CORP_ID" property="tranCorpId" />
+            <result column="ISS_SCAL" property="issScal" />
+            <result column="ISS_NUM" property="issNum" />
+            <result column="SCR_ID" property="scrId" />
+            <result column="OFLE_MIN_PURCH_NUM" property="ofleMinPurchNum" />
+            <result column="OFLE_DEP_RATI" property="ofleDepRati" />
+            <result column="OFLE_MAX_PURCH_NUM" property="ofleMaxPurchNum" />
+            <result column="ONLE_MIN_PURCH_NUM" property="onleMinPurchNum" />
+            <result column="ONLE_MAX_PURCH_NUM" property="onleMaxPurchNum" />
+            <result column="BOND_TERM" property="bondTerm" />
+            <result column="IR_TYPE" property="irType" />
+            <result column="IR" property="ir" />
+            <result column="INT_PAY_FREQ" property="intPayFreq" />
+            <result column="IR_INTRO" property="irIntro" />
+            <result column="REMARK" property="remark" />
+            <result column="BUSIDATE" property="busidate" />
+            <result column="MARKET" property="market" />
+            <result column="STKCODE" property="stkcode" />
+            <result column="DIVD_BASI_DATE" property="divdBasiDate" />
+            <result column="CASH_DVD_PER_SHR" property="cashDvdPerShr" />
+            <result column="EQUI_REG_DATE" property="equiRegDate" />
+            <result column="EX_DVD_DATE" property="exDvdDate" />
+            <result column="EX_DVD_DATE_OTC" property="exDvdDateOtc" />
+            <result column="PAY_DIVD_DATE" property="payDivdDate" />
+            <result column="PAY_DIVD_DATE_OTC" property="payDivdDateOtc" />
+            <result column="IMPL_NTC_DATE" property="implNtcDate" />
+            <result column="SHR_BASI_Y" property="shrBasiY" />
+            <result column="BASI_SHR" property="basiShr" />
+            <result column="ASGNABLE_PRFT" property="asgnablePrft" />
+            <result column="NETVAL_EX_RIGH_DATE" property="netvalExRighDate" />
+            <result column="PRFT_AMTS" property="prftAmts" />
+            <result column="REINV_ONACCT_DATE" property="reinvOnacctDate" />
+            <result column="ANN_DATE" property="annDate" />
+            <result column="PRFT_PAY_DATE" property="prftPayDate" />
+            <result column="BASI_DATE_UNITNAV" property="basiDateUnitnav" />
+            <result column="DVD_TO_ACCT_DATE" property="dvdToAcctDate" />
+            <result column="BUSIDATE" property="busidate" />
+            <result column="MARKET" property="market" />
+            <result column="STKCODE" property="stkcode" />
+            <result column="ALLOT__PRIC" property="allotPric" />
+            <result column="ALLOT_RATI" property="allotRati" />
+            <result column="ALLOT_AMT" property="allotAmt" />
+            <result column="ALLOT_AMT_ACT" property="allotAmtAct" />
+            <result column="ALLOT_COLL_FND" property="allotCollFnd" />
+            <result column="ALLOT_REG_DATE" property="allotRegDate" />
+            <result column="EX_ALLOT_DATE" property="exAllotDate" />
+            <result column="LIST_DATE" property="listDate" />
+            <result column="PYMT_BEGN_DATE" property="pymtBegnDate" />
+            <result column="PYMT_END_DATE" property="pymtEndDate" />
+            <result column="IMPL_ANN_DATE" property="implAnnDate" />
+            <result column="RSLT_ANN_DATE" property="rsltAnnDate" />
+            <result column="LIST_ANN_DATE" property="listAnnDate" />
+            <result column="PLAC_CD" property="placCd" />
+            <result column="ALLOT_SCR_ABBR" property="allotScrAbbr" />
+            <result column="EXPE_COLL_FND" property="expeCollFnd" />
+            <result column="BUSIDATE" property="busidate" />
+            <result column="MARKET" property="market" />
+            <result column="STKCODE" property="stkcode" />
+            <result column="ISS_PRICE" property="issPrice" />
+            <result column="ISS_BEF_PER" property="issBefPer" />
+            <result column="ISS_AFT_PER" property="issAftPer" />
+            <result column="ISS_AMT" property="issAmt" />
+            <result column="ONLNE_ISS_CNT" property="onlneIssCnt" />
+            <result column="OFLE_ISS_AMOUNT" property="ofleIssAmount" />
+            <result column="COLL_FND" property="collFnd" />
+            <result column="ONLE_ISS_ALLO_RATI" property="onleIssAlloRati" />
+            <result column="ONLE_PURCH_CD" property="onlePurchCd" />
+            <result column="PURCH_DATE" property="purchDate" />
+            <result column="PLAN_LIST_DATE" property="planListDate" />
+            <result column="PURCH_FND_VER_DATE" property="purchFndVerDate" />
+            <result column="ALLO_PUB_DATE" property="alloPubDate" />
+            <result column="ONLNE_ALLO_PUB_DATE" property="onlneAlloPubDate" />
+            <result column="LIST_DATE" property="listDate" />
+            <result column="ISS_PUB_DATE" property="issPubDate" />
+            <result column="LIST_PUB_DATE" property="listPubDate" />
+            <result column="OFLE_PLAC_ISS_PUB_DATE" property="oflePlacIssPubDate" />
+            <result column="OFLE_PURS_BGN_DATE" property="oflePursBgnDate" />
+            <result column="OFLE_PURCH_END_DATE" property="oflePurchEndDate" />
+            <result column="OFLE_PURCH_FND_END_DATE" property="oflePurchFndEndDate" />
+            <result column="OFLE_VER_DATE" property="ofleVerDate" />
+            <result column="PLAN_COLL_FND" property="planCollFnd" />
+            <result column="PURCH_MAX" property="purchMax" />
+            <result column="PURCH_AMT_MAX" property="purchAmtMax" />
+            <result column="ONLNE_ISS_ABBR" property="onlneIssAbbr" />
+            <result column="ONLNE_PURCH_MAX" property="onlnePurchMax" />
+            <result column="OFLE_PURCH_MAX" property="oflePurchMax" />
+            <result column="OFLE_PURCH_MIN" property="oflePurchMin" />
+            <result column="NEW_STK_ISS_CNT" property="newStkIssCnt" />
+            <result column="NEW_PUB_DATE" property="newPubDate" />
+            <result column="ONLE_PURCH_PAY_DATE" property="onlePurchPayDate" />
+            <result column="OFLE_ISS_NUM" property="ofleIssNum" />
+            <result column="LISTED_DATE" property="listedDate" />
+        </resultMap>
+
+
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+${alias}market,${alias}stktype,${alias}bsflag,${alias}clearspeed,${alias}assetdealdatetype,
+${alias}assetdealpoint,${alias}cashctrltype,${alias}stkctrltype,${alias}cashaddtype,
+${alias}stkaddtype,${alias}avladdpoint,${alias}setttype,${alias}funddirect,
+${alias}stkdirect,${alias}cancancelflag,${alias}reorderflag,${alias}amtcalmode,
+${alias}businclass,${alias}bsdirect,${alias}pricecalmode,${alias}stktargettype,
+${alias}fundacct,${alias}market,${alias}stktypes,${alias}bsflags,
+${alias}feeid,${alias}calctype,${alias}feerate,${alias}minfee,
+${alias}maxfee,${alias}remark,${alias}fundacct,${alias}market,
+${alias}stktype,${alias}bsflag,${alias}feeid,${alias}calctype,
+${alias}feerate,${alias}minfee,${alias}maxfee,${alias}remark,
+${alias}indexkey,${alias}bpnode,${alias}srvgroup,${alias}status,
+${alias}servertypes,${alias}remark,${alias}servergroup,${alias}endpointtype,
+${alias}bpnode,${alias}srvname,${alias}zmqmode,${alias}protocoltype,
+${alias}address,${alias}baktype,${alias}remark,${alias}status,
+${alias}topic_string,${alias}fundid,${alias}funcid,${alias}ip,
+${alias}port,${alias}remark,${alias}serverid,${alias}lastsysdate,
+${alias}busidate,${alias}orderdate,${alias}status,${alias}dbstatus,
+${alias}dboperid,${alias}monitorid,${alias}remark,${alias}id,
+${alias}monitorid,${alias}servername,${alias}uploadunixtime,${alias}count,
+${alias}uploadip,${alias}value,${alias}bpnode,${alias}srvgroup,
+${alias}fundid,${alias}status,${alias}remark,${alias}server_name,
+${alias}upload_time,${alias}log_info,${alias}ip,${alias}bpnode,
+${alias}funcid,${alias}userid,${alias}servertype,${alias}servername,
+${alias}funcid,${alias}status,${alias}remark,${alias}serverproperty,
+${alias}serverbind,${alias}showorder,${alias}execorder,${alias}servergroup,
+${alias}bpnode,${alias}funcid,${alias}start_id,${alias}process_id,
+${alias}servername,${alias}ip,${alias}updatetime,${alias}phydate,
+${alias}startdate,${alias}starttime,${alias}idle_as,${alias}column_name,
+${alias}data_type,${alias}data_length,${alias}data_precision,${alias}data_scale,
+${alias}dictitem,${alias}remark,${alias}endpointtype,${alias}bind_type,
+${alias}socket_type,${alias}protocol,${alias}endpoint_name,${alias}zmq_mode_describe,
+${alias}topic_type,${alias}topic_string,${alias}status,${alias}server_type,
+${alias}endpointtype,${alias}deploy_type,${alias}send_flag,${alias}connect_endpointtype,
+${alias}bind_endpointtype,${alias}connect_type,${alias}connect_name,${alias}paramid,
+${alias}orgid,${alias}paramvalue,${alias}pathtype,${alias}bsflag,
+${alias}market,${alias}stktype,${alias}rptmode,${alias}order_businessid,
+${alias}batchorder_businessid,${alias}cancel_businessid,${alias}orderqry_businessid,${alias}match_way,
+${alias}sno,${alias}msg_type,${alias}trace_type,${alias}trace_sno,
+${alias}msg_no,${alias}servergroup,${alias}bpnodeid,${alias}trade_time,
+${alias}db_time,${alias}market,${alias}stkcode,${alias}loftype,
+${alias}maxbuyqty,${alias}minbuyqty,${alias}buyunit,${alias}maxsaleqty,
+${alias}minsaleqty,${alias}saleunit,${alias}tradestate,${alias}settlefundays,
+${alias}i_by,${alias}c_by,${alias}remark,${alias}lastdate,
+${alias}stkid,${alias}busi_date,${alias}busi_time,${alias}phy_date,
+${alias}phy_time,${alias}funcid,${alias}server_group,${alias}busi_sno,
+${alias}log_type,${alias}log_info,${alias}taskid,${alias}busidate,
+${alias}begintime,${alias}endtime,${alias}passflag,${alias}last_begintime,
+${alias}last_endtime,${alias}last_passflag,${alias}errorinfo,${alias}remark,
+${alias}lbmid,${alias}securitydate,${alias}securitytime,${alias}nodeid,
+${alias}mac,${alias}sessionid,${alias}ip,${alias}userid,
+${alias}cnt,${alias}vendor_id,${alias}collect_date,${alias}collect_time,
+${alias}plug_name,${alias}plug_account,${alias}plug_guuid,${alias}plug_ip,
+${alias}plug_mac,${alias}err_type,${alias}userid,${alias}nodeid,
+${alias}mac,${alias}ip,${alias}userid,${alias}createtime,
+${alias}updatetime,${alias}unfreezetime,${alias}over_counts,${alias}challenge_counts,
+${alias}file_destroy_counts,${alias}freezestatus,${alias}remitstatus,${alias}vendor_id,
+${alias}collect_date,${alias}collect_time,${alias}plug_name,${alias}plug_account,
+${alias}plug_account1,${alias}plug_guuid,${alias}plug_ip,${alias}plug_mac,
+${alias}collect_date,${alias}collect_time,${alias}vendor_id,${alias}server_online,
+${alias}vendor_id,${alias}version,${alias}plug_db,${alias}collect_date,
+${alias}collect_time,${alias}server_id,${alias}ver_check,${alias}qsid_check,
+${alias}file_check,${alias}act_chal,${alias}fre_limit,${alias}file_check_reject,
+${alias}act_chal_reject,${alias}fre_limit_reject,${alias}vendor_id,${alias}collect_date,
+${alias}collect_time,${alias}plug_client_sum,${alias}plug_client_account,${alias}warn_sum,
+${alias}file_check_warn_sum,${alias}act_chal_warn_sum,${alias}fre_limit_warn_sum,${alias}rej_sum,
+${alias}file_check_rej_sum,${alias}act_chal_rej_sum,${alias}fre_limit_rej_sum,${alias}vendor_id,
+${alias}collect_date,${alias}collect_time,${alias}wg_type,${alias}wg_type_num,
+${alias}sessionid,${alias}createtime,${alias}updatetime,${alias}killtime,
+${alias}status,${alias}busidate,${alias}logsno,${alias}userid,
+${alias}sign_phydate,${alias}sign_time,${alias}sessionid,${alias}action,
+${alias}agreement_id,${alias}agreement_version,${alias}agreement_tittle,${alias}menuid,
+${alias}agreement_channel,${alias}ext_agreement_id,${alias}sign_main_type,${alias}sign_main_id,
+${alias}reserve,${alias}agreement_id,${alias}ext_agreement_id,${alias}agree_version,
+${alias}sign_main_type,${alias}sign_main_id,${alias}agreement_channel,${alias}userid,
+${alias}sign_phydate,${alias}sign_time,${alias}update_date,${alias}update_time,
+${alias}status,${alias}reserve,${alias}logsno,${alias}userid,
+${alias}paramname,${alias}paramvalue,${alias}upddate,${alias}updtime,
+${alias}sno,${alias}msgtitle,${alias}msginfo,${alias}createdate,
+${alias}begindate,${alias}expiredate,${alias}opertime,${alias}msgtype,
+${alias}orgid,${alias}operuserid,${alias}opername,${alias}msgstatus,
+${alias}nodeid,${alias}dbname,${alias}tablename,${alias}datacapacity,
+${alias}datacount,${alias}lastchecktime,${alias}databasesize,${alias}tablesize,
+${alias}tablestatus,${alias}databasestatus,${alias}agreement_id,${alias}agree_version,
+${alias}agreement_channel,${alias}ext_agreement_id,${alias}agree_title,${alias}ext_info,
+${alias}update_date,${alias}update_time,${alias}valid_period,${alias}interface_name,
+${alias}param_name,${alias}ismust,${alias}ispost,${alias}isvalid,
+${alias}paramid,${alias}dispsno,${alias}groupid,${alias}paramname,
+${alias}datatype,${alias}datalen,${alias}declen,${alias}ctrltype,
+${alias}ctrlstyle,${alias}displaywidth,${alias}dictitem,${alias}valuelist,
+${alias}status,${alias}settype,${alias}verifyfunc,${alias}remark,
+${alias}isnull,${alias}defaultvalue,${alias}groupid,${alias}parentgroupid,
+${alias}groupname,${alias}describe,${alias}imgindex,${alias}managerment,
+${alias}app_category,${alias}app_type,${alias}env_type,${alias}version_type,
+${alias}version_no,${alias}version_sno,${alias}app_name,${alias}version_time,
+${alias}version_size,${alias}version_md5,${alias}file_name_content,${alias}file_name_ia32,
+${alias}file_name_x64,${alias}version_text,${alias}must_update,${alias}version_site,
+${alias}version_mode,${alias}update_date,${alias}update_time,${alias}valid,
+${alias}remark,${alias}orgids,${alias}userids,${alias}bpnode,
+${alias}srvgroup,${alias}servertypes,${alias}serverscount,${alias}status,
+${alias}remark,${alias}stkcode,${alias}market,${alias}stkid,
+${alias}stkname,${alias}moneytype,${alias}stkstatus,${alias}fundkind,
+${alias}typeunit,${alias}modifydate,${alias}modifytime,${alias}modifyoperid,
+${alias}flowtype,${alias}transfer_count,${alias}modelname,${alias}modifyoperid,
+${alias}modifydate,${alias}modifytime,${alias}stkcode,${alias}market,
+${alias}busi_type,${alias}busibegindate,${alias}busienddate,${alias}reportunit,
+${alias}minreportqty,${alias}maxreportqty,${alias}transinstkcode,${alias}transinstkname,
+${alias}busiprice,${alias}stkid,${alias}productid,${alias}agrtype,
+${alias}backpurchasecode,${alias}calpmunitincm,${alias}changebeforedurationenddate,${alias}chiname,
+${alias}closeperiodbegindate,${alias}closeperiodenddate,${alias}closeperiodtypecode,${alias}collectbegindate,
+${alias}collectenddate,${alias}contracteffdate,${alias}contracteffnoticedate,${alias}datastatus,
+${alias}dayreturn,${alias}delid,${alias}discount,${alias}durationbegindate,
+${alias}durationenddate,${alias}durationyear,${alias}endlistdate,${alias}engname,
+${alias}engnameshort,${alias}exchangecode,${alias}exchangename,${alias}expchinameabbr,
+${alias}recdowntime,${alias}recfirsttime,${alias}recid,${alias}recupdatetime,
+${alias}secuid,${alias}frontpurchasecode,${alias}fundlevelcode,${alias}fundlevelmodecode,
+${alias}fundmanagecorp,${alias}fundmanagecorpid,${alias}fundopermodecode,${alias}fundoperperiod,
+${alias}fundstylecode,${alias}fundtrustee,${alias}fundtrusteeid,${alias}fundtype,
+${alias}fundtypecode,${alias}fundtypecodetx,${alias}gfselling,${alias}iffixdateopenfund,
+${alias}iffixed,${alias}indextradedate,${alias}investfeaturecode,${alias}investtype,
+${alias}isallowbuy,${alias}isallowredeem,${alias}isexchangetrans,${alias}isvirtualfund,
+${alias}issuescale,${alias}levelcode,${alias}levelpublishdate,${alias}listboarcode,
+${alias}listboarname,${alias}listdate,${alias}listscale,${alias}liststatuscode,
+${alias}lstdafterrorshrnav,${alias}minholdshare,${alias}minperfappbalance,${alias}minredemptionshare,
+${alias}navtradedate,${alias}oncounter,${alias}openshare,${alias}parvalue,
+${alias}parvaluecrrccode,${alias}perfbenchmark,${alias}periodtype,${alias}pinyinabbr,
+${alias}pmunitincm,${alias}prodstatus,${alias}prodtano,${alias}purchaseway,
+${alias}recent7dayannreturn,${alias}return1m,${alias}return1w,${alias}return1y,
+${alias}return2y,${alias}return3m,${alias}return3y,${alias}return5y,
+${alias}return6m,${alias}returntn,${alias}returnty,${alias}returntypecode,
+${alias}risklevel,${alias}scale,${alias}secuabbr,${alias}secumainid,
+${alias}secutype,${alias}sharecaroverdate,${alias}sharenav,${alias}sharenavafterror,
+${alias}sharesumnav,${alias}shrcaroverdaytypecode,${alias}shrcarovermodecode,${alias}timereturn1y,
+${alias}timereturn2y,${alias}timereturn3y,${alias}tradecode,${alias}maxretracement,
+${alias}orgmaxpdshare,${alias}orgminfappbalance,${alias}orglowlimitbalance2,${alias}scalenoticedate,
+${alias}invmgrs,${alias}subfeeratio,${alias}discountsubfeeratio,${alias}applyfeeratio,
+${alias}discountapplyfeeratio,${alias}redeemfeeratio,${alias}discountredeemfeeratio,${alias}trusteeshipfeeratio,
+${alias}managefeeratio,${alias}rewardfeeratio,${alias}chargetype,${alias}bonusmethod,
+${alias}redemptionunit,${alias}maxorgredshare,${alias}assetrecommend,${alias}wealthrecommend,
+${alias}newproduct,${alias}assetstype,${alias}endfundassetnav,${alias}enddate,
+${alias}sync_stat,${alias}record_date,${alias}record_stat,${alias}label_name,
+${alias}comment_title,${alias}comm_explain,${alias}sub_label,${alias}purchasecodetype,
+${alias}interfacenames,${alias}orgtradecode,${alias}introduce,${alias}reason,
+${alias}bondtypecode,${alias}moneydate,${alias}orgoneappmaxbalance,${alias}orgappendbalance,
+${alias}orgonesubmaxbalance,${alias}orglowlimitbalance,${alias}withdrawdate,${alias}ncdindexfund,
+${alias}opendaystartdate,${alias}closeperiod,${alias}stkid,${alias}productid,
+${alias}abroadasset,${alias}accumnav,${alias}additionamount,${alias}agrtype,
+${alias}approtype,${alias}assetalltype,${alias}assetmgrtype,${alias}isquoted,
+${alias}sellsize,${alias}assetonetype,${alias}assetstype,${alias}benchmark,
+${alias}chiname,${alias}chinameabbr,${alias}chispelling,${alias}closedate,
+${alias}composetag,${alias}connectedcode,${alias}currencytype,${alias}customizedornot,
+${alias}datastatus,${alias}dateraise,${alias}firstamount,${alias}forcustomertype,
+${alias}gfselling,${alias}hedgingflag,${alias}incometype,${alias}interestdays,
+${alias}investstyle,${alias}investtype,${alias}invmgrs,${alias}isssize,
+${alias}issuecompany,${alias}issuer,${alias}mgmtperiod,${alias}monraise,
+${alias}monraise3,${alias}monraise6,${alias}raiseoneyear,${alias}prodterm,
+${alias}navdate,${alias}parvalue,${alias}parentsecucode,${alias}payway,
+${alias}perfben,${alias}perfbenshow,${alias}periodtype,${alias}prodmodel,
+${alias}prodoperationtype,${alias}prodreleaseobject,${alias}prodstatus,${alias}prodtano,
+${alias}productsubtype,${alias}psecutype,${alias}purchaseway,${alias}quantitativeflag,
+${alias}raise,${alias}raisedate,${alias}reviewstatus,${alias}risklevel,
+${alias}secucode,${alias}secutype,${alias}setupdate,${alias}strategy,
+${alias}subcompanyornot,${alias}unitnav,${alias}updatetime,${alias}valuedate,
+${alias}wealthtype,${alias}withdrawtype,${alias}yearraise,${alias}orgmaxpdshare,
+${alias}isallowbuy,${alias}orgminfappbalance,${alias}orglowlimitbalance2,${alias}yearraise1,
+${alias}subfeeratio,${alias}discountsubfeeratio,${alias}applyfeeratio,${alias}discountapplyfeeratio,
+${alias}redeemfeeratio,${alias}discountredeemfeeratio,${alias}trusteeshipfeeratio,${alias}managefeeratio,
+${alias}rewardfeeratio,${alias}redemptionunit,${alias}maxorgredshare,${alias}assetrecommend,
+${alias}wealthrecommend,${alias}newproduct,${alias}incomeratetype,${alias}maxcompref,
+${alias}mincompref,${alias}ytm,${alias}buydate,${alias}permyriadincome,
+${alias}sevenincomeratio,${alias}prodpreratio,${alias}total_quota,${alias}sale_quota,
+${alias}total_holder_num,${alias}current_holder_num,${alias}t2type,${alias}sync_stat,
+${alias}record_date,${alias}record_stat,${alias}label_name,${alias}comment_title,
+${alias}comm_explain,${alias}sub_label,${alias}interfacenames,${alias}referpublicprod,
+${alias}introduce,${alias}reason,${alias}orgoneappmaxbalance,${alias}orgappendbalance,
+${alias}orgonesubmaxbalance,${alias}orglowlimitbalance,${alias}ncdindexfund,${alias}taskgroup,
+${alias}taskid,${alias}execorder,${alias}pretask,${alias}status,
+${alias}stopflag,${alias}lbmid,${alias}timeout,${alias}busiparam,
+${alias}failtype,${alias}succtype,${alias}roundfailtimes,${alias}roundfailmax,
+${alias}roundruning,${alias}execstat,${alias}taskgroup,${alias}taskid,
+${alias}busidate,${alias}operid,${alias}opertime,${alias}pass_flag,
+${alias}remark,${alias}rank_mode,${alias}prd_type,${alias}sub_prd_type,
+${alias}period,${alias}row_no,${alias}prd_no,${alias}prd_name,
+${alias}trd_bal,${alias}trd_cust,${alias}ror_1m,${alias}ror_3m,
+${alias}ror_ths_year,${alias}benchmark,${alias}ivst_term,${alias}setup_date,
+${alias}close_date,${alias}per_myriad_income,${alias}annualized_yield_7d,${alias}annualized_yield_1m,
+${alias}busi_date,${alias}infoid,${alias}title,${alias}roundup,
+${alias}url,${alias}sentiment_score,${alias}sync_date,${alias}sync_time,
+${alias}publish_date,${alias}publish_time,${alias}infoid,${alias}userid,
+${alias}useful,${alias}text,${alias}feedback_date,${alias}feedback_time,
+${alias}infoid,${alias}parent_stkid,${alias}stkid,${alias}stkcode,
+${alias}market,${alias}relationship,${alias}infoid,${alias}stkid,
+${alias}stkcode,${alias}market,${alias}env_type,${alias}param_key,
+${alias}param_value,${alias}funcid,${alias}funclevel,${alias}busidate,
+${alias}phydate,${alias}phytime,${alias}bpnodeid,${alias}funcid,
+${alias}calltimes,${alias}maxcost,${alias}avgcost,${alias}interface_id,
+${alias}interface_path,${alias}interface_name,${alias}system_id,${alias}system_gid,
+${alias}content_type,${alias}method,${alias}timeout,${alias}target_msgtype,
+${alias}ext_uri_param,${alias}ext_body_param,${alias}is_link_check,${alias}system_id,
+${alias}system_gid,${alias}funcid,${alias}pathtype,${alias}system_path,
+${alias}app_id,${alias}app_key,${alias}system_name,${alias}is_open,
+${alias}certificate,${alias}is_link_check,${alias}system_id,${alias}system_gid,
+${alias}last_monitor_date,${alias}last_monitor_time,${alias}last_link_status,${alias}system_busidate,
+${alias}remark,${alias}log_date,${alias}log_sno,${alias}system_id,
+${alias}system_gid,${alias}last_monitor_date,${alias}last_monitor_time,${alias}last_link_status,
+${alias}system_busidate,${alias}remark,${alias}bsflag,${alias}market,
+${alias}stktype,${alias}trdid,${alias}stklevel,${alias}stkblock,
+${alias}fundkind,${alias}errmsg,${alias}SYSTEM_ID,${alias}SYSTEM_NAME,
+${alias}APP_ID,${alias}APP_KEY,${alias}AUTH_TIMEOUT,${alias}AUTH_FLAG,
+${alias}APP_TYPE,${alias}ANS_TYPE,${alias}STATUS,${alias}SYSTEM_ID,
+${alias}INTERFACE_ID,${alias}FLOW_LIMIT,${alias}STATUS,${alias}INTERFACE_ID,
+${alias}INTERFACE_PATH,${alias}INTERFACE_NAME,${alias}FUNCID,${alias}METHOD,
+${alias}EXT_URI_PARAM,${alias}EXT_BODY_PARAM,${alias}STATUS,${alias}orgid,
+${alias}feeid,${alias}stkcode,${alias}market,${alias}etfcode0,
+${alias}fee_sxf,${alias}fee_sxf_min,${alias}fee_yhs,${alias}fee_etf,
+${alias}fee_etf_min,${alias}fee_fund,${alias}fee_fund_min,${alias}fee_ghf,
+${alias}fee_other,${alias}remark,${alias}orgid,${alias}menuid,
+${alias}bpnode,${alias}srvgroup,${alias}servertypes,${alias}serverscount,
+${alias}stkcode,${alias}market,${alias}tradingtype,${alias}priceunit,
+${alias}maxriseprice,${alias}maxdownprice,${alias}maxbuyqty,${alias}maxsaleqty,
+${alias}minbuyqty,${alias}minsaleqty,${alias}buyunit,${alias}saleunit,
+${alias}updatedate,${alias}curr_type,${alias}calc_type,${alias}rate_type,
+${alias}calc_rate,${alias}updatedate,${alias}updatetime,${alias}subeventtype,
+${alias}eventtype,${alias}busitype,${alias}subbusitype,${alias}category,
+${alias}is_make_event,${alias}is_remind,${alias}goto_menuid,${alias}is_valid,
+${alias}eventid,${alias}parentid,${alias}indexid,${alias}userid,
+${alias}projectids,${alias}orgid,${alias}title,${alias}subeventtype,
+${alias}source,${alias}notify_mode,${alias}voice,${alias}allday,
+${alias}series,${alias}abstract,${alias}begindate,${alias}begintime,
+${alias}enddate,${alias}endtime,${alias}recur_enddate,${alias}rule,
+${alias}msg_createdate,${alias}msg_createtime,${alias}msg_createstat,${alias}createdate,
+${alias}createtime,${alias}upddate,${alias}updtime,${alias}expiredate,
+${alias}stat,${alias}msgtitle,${alias}eventid,${alias}detail,
+${alias}storetype,${alias}expiredate,${alias}msgid,${alias}eventid,
+${alias}parentid,${alias}userid,${alias}projectids,${alias}orgid,
+${alias}title,${alias}subeventtype,${alias}source,${alias}notify_mode,
+${alias}voice,${alias}allday,${alias}mustdo,${alias}abstract,
+${alias}notifydate,${alias}notifytime,${alias}createdate,${alias}createtime,
+${alias}upddate,${alias}updtime,${alias}stat,${alias}msgid,
+${alias}detail,${alias}storetype,${alias}createdate,${alias}userid,
+${alias}subeventtype,${alias}attention,${alias}voice,${alias}notify_mode,
+${alias}upddate,${alias}updtime,${alias}msgid,${alias}eventid,
+${alias}userid,${alias}notifydate,${alias}notifytime,${alias}netaddr,
+${alias}sessionid,${alias}msg_no,${alias}busidate,${alias}busitime,
+${alias}subeventtype,${alias}source,${alias}busidate,${alias}operid,
+${alias}opertime,${alias}pass_flag,${alias}remark,${alias}stkcode,
+${alias}market,${alias}stkid,${alias}bankstkcode,${alias}simplename,
+${alias}extsimplename,${alias}marketdate,${alias}ticketprice,${alias}issueprice,
+${alias}ticketrate,${alias}begindate,${alias}enddate,${alias}payinterval,
+${alias}existlimit,${alias}limitunit,${alias}fullname,${alias}bondtype,
+${alias}ratetype,${alias}issuetype,${alias}issuer,${alias}issuertype,
+${alias}mainrating,${alias}facilityrating,${alias}ratingorg,${alias}isthismarket,
+${alias}circulation,${alias}specbondtype,${alias}structgrading,${alias}absname,
+${alias}tradetype,${alias}settletype,${alias}pricetype,${alias}appropriateness,
+${alias}spectrans,${alias}isbasemarkettype,${alias}delistdate,${alias}rightypes,
+${alias}putright,${alias}redeemright,${alias}underwriter,${alias}beginissuedate,
+${alias}endissuedate,${alias}outimpawndate,${alias}inimpawndate,${alias}exchrate,
+${alias}isincode,${alias}putbegindate,${alias}putenddate,${alias}putassetdate,
+${alias}putcancelbegdate,${alias}putcancelenddate,${alias}istransput,${alias}transstktype,
+${alias}transstkcode,${alias}transstkname,${alias}transprice,${alias}transstkbegdate,
+${alias}transstkenddate,${alias}exchangestkcode,${alias}exchangestkname,${alias}exchangeprice,
+${alias}exchangebegdate,${alias}exchangeenddate,${alias}BUSIDATE,${alias}MARKET,
+${alias}STKCODE,${alias}MAND_PUT_PD,${alias}MAND_PUT_PRIC,${alias}MAND_PUT_START_DT,
+${alias}MAND_PUT_END_DT,${alias}MAND_PUT_TEXT,${alias}COND_PUT_START_DT,${alias}COND_PUT_END_DT,
+${alias}COND_REDP_START_DT,${alias}COND_REDP_END_DT,${alias}REDP_TERM_PRIC,${alias}BUSIDATE,
+${alias}MARKET,${alias}STKCODE,${alias}PUT_ANN_DT,${alias}PUT_START_DT,
+${alias}PUT_END_DT,${alias}FND_ARIVL_DT,${alias}REPO_PRIC,${alias}PUT_EXEC_DT,
+${alias}PUT_AMT,${alias}PUT_CD,${alias}PUT_DT,${alias}BUSIDATE,
+${alias}MARKET,${alias}STKCODE,${alias}TYPE_CD,${alias}PLG_NAME,
+${alias}VLD_FLAG,${alias}REMARK,${alias}BUSIDATE,${alias}MARKET,
+${alias}STKCODE,${alias}IVSTR_ID,${alias}IVSTR_TYPE,${alias}IVSTR_NAME,
+${alias}PLAC_SHR,${alias}LOCK_MTH,${alias}ACTL_ORD_SHR,${alias}ANN_DT,
+${alias}END_DT,${alias}REFND_PAYBK_AMT,${alias}SHR_TYPE,${alias}TRDB_DT,
+${alias}LAST_HOLD_SHR,${alias}LAST_HOLD_SHR_FIN,${alias}IVSTR_TYPE_CD,${alias}ANN_IVSTR_NAME,
+${alias}BUSIDATE,${alias}MARKET,${alias}STKCODE,${alias}ANN_DT,
+${alias}COVT_CD,${alias}COVT_ABBR,${alias}COVT_PRIC,${alias}RELA_SECU_ID,
+${alias}RELA_SCR_CD,${alias}COVT_START_DT,${alias}COVT_END_DT,${alias}LAST_TRD_DT,
+${alias}FRC_COVT_DT,${alias}FRC_COVT_PRIC,${alias}FRC_FLAG,${alias}FRC_COVT_RSN,
+${alias}BUSIDATE,${alias}MARKET,${alias}STKCODE,${alias}DEBT_RT_DEBT_REG_DT,
+${alias}THIM_IR_PRD_BGN_DT,${alias}THIM_IR_PRD_END_DT,${alias}INTA_BGN_DT,${alias}INTA_END_DT,
+${alias}INTA_CASH_MODE,${alias}CASH_REG_DT,${alias}CASH_BGN_DT,${alias}CASH_END_DT,
+${alias}CASH_CLR_DT,${alias}EX_RT_DT,${alias}OHY_PAY_INT_BTAX,${alias}OHY_PAY_INT_AFT_TAX,
+${alias}OHY_CASH_PRINP,${alias}OHY_CASH_PRINP_INT,${alias}OHY_IA_CASE_NETPRICE,${alias}THIM_CASH_PRINP,
+${alias}THIM_PAY_INT,${alias}CASH_PRINP_INT,${alias}THIM_BACK_PRINC_RATI,${alias}THIM_BACK_PRINC_AMT,
+${alias}THIM_INTP_AND,${alias}THIM_CASH_PRINP_AND,${alias}CASH_GAMT,${alias}BUSIDATE,
+${alias}MARKET,${alias}STKCODE,${alias}FULL_NAME,${alias}ABBR_NAME,
+${alias}ABBR_PINYIN,${alias}LIST_ANN_DATE,${alias}LIST_DATE,${alias}DELIST,
+${alias}NET_ISS_END_DATE,${alias}NET_ISS_BEGIN_DATE,${alias}NET_ISS_AMOUNT,${alias}NET_ISS_SCRP_CD,
+${alias}PAY_INTR_FREQ,${alias}BOND_TERM_YEAR,${alias}CASH_REG_BEGIN_DATE,${alias}CASH_DATE,
+${alias}IR_INTRO,${alias}IR_SPREAD,${alias}IR_TYPE,${alias}DUE_DATE,
+${alias}REF_YIELD,${alias}ISS_BEGIN_DATE,${alias}ISS_END_DATE,${alias}ISS_COUP_RATE,
+${alias}ISS_ANN_DATE,${alias}ISS_METHOD,${alias}ISSR_NAME,${alias}ISSR_NO,
+${alias}ISSR_TYPE,${alias}ISS_OBJ,${alias}ISS_AMT_UL,${alias}ISS_BOND_RATE,
+${alias}ISS_PRIC,${alias}ACTL_ISS_AMTS,${alias}PLAN_ISS_AMTS,${alias}PAR_VAL,
+${alias}LAST_PAR_VAL,${alias}INTA_END_DATE,${alias}INTA_BEGIN_DATE,${alias}INTA_METHOD,
+${alias}INTA_BASIC,${alias}FORMER_BOND_CD,${alias}BUSIDATE,${alias}MARKET,
+${alias}STKCODE,${alias}OBJ_NAME,${alias}ANN_DATE,${alias}RAT_DATE,
+${alias}RAT_ORG_CD,${alias}RAT_ORG_NAME,${alias}CRED_RAT,${alias}RAT_INTRO,
+${alias}PREV_CRED_RAT,${alias}RATING_VLD_END_DATE,${alias}BUSIDATE,${alias}MARKET,
+${alias}STKCODE,${alias}REDP_DT,${alias}REDP_PRIC,${alias}REDP_ANN_DT,
+${alias}EXEC_RSLT_ANN_DT,${alias}REDP_TOT_VOL,${alias}PUB_REDP_DT,${alias}REDP_RSN,
+${alias}REDP_ACCT_DT,${alias}REDP_REG_DT,${alias}REDP_NET_PRIC,${alias}BUSIDATE,
+${alias}MARKET,${alias}STKCODE,${alias}DEFLT_DATE,${alias}ABBR_NAME,
+${alias}ANN_DATE,${alias}DEFLT_TYPE,${alias}DEFLT_RSN,${alias}DEFLT_DATE_BOND_BAL,
+${alias}DEFLT_DATE_PAYABLECAPITAL,${alias}DEFLT_DATE_PAYABLEINTEREST,${alias}DEFLT_DATE_PAYABLE_CAP_INT,${alias}DEFLT_DATE_PAYMENTCAPITAL,
+${alias}DEFLT_DATE_PAYMENTINTEREST,${alias}DEFLT_DATE_PAYMENT_CAP_INT,${alias}DEFLT_DATE_BOND_BAL1,${alias}BUSIDATE,
+${alias}MARKET,${alias}STKCODE,${alias}GUAR_AGY_SHT,${alias}GUAR_AGY_SHT_ABB,
+${alias}ANN_DATE,${alias}LIST_NTC_DATE,${alias}LIST_DATE,${alias}INIT_TRAN_PRIC,
+${alias}INIT_TRAN_PRIC_PRE_RATI,${alias}ISS_NTC_DATE,${alias}ISS_RLST_NTC_DATE,${alias}OSH_PRIO_PLAC_DATE,
+${alias}OSH_PRIO_PLAC_EQUI_REG_DATE,${alias}OSH_PRIO_PLAC_PAY_DATE,${alias}OSH_PRIO_PLAC_CD,${alias}OSH_PRIO_PLAC_ABBR,
+${alias}OSH_PRIO_PLAC_PRIC,${alias}OSH_PRIO_PLAC_RATI_DEN,${alias}OSH_PRIO_PLAC_RATI_MOLE,${alias}ONLE_ISS_DATE,
+${alias}ONLE_ISS_PURCH_CD,${alias}ONLE_ISS_PURCH_NAME,${alias}ONLE_ISS_PURCH_PRIC,${alias}ONLE_ISS_NUM,
+${alias}TRAN_CORP_ID,${alias}ISS_SCAL,${alias}ISS_NUM,${alias}SCR_ID,
+${alias}OFLE_MIN_PURCH_NUM,${alias}OFLE_DEP_RATI,${alias}OFLE_MAX_PURCH_NUM,${alias}ONLE_MIN_PURCH_NUM,
+${alias}ONLE_MAX_PURCH_NUM,${alias}BOND_TERM,${alias}IR_TYPE,${alias}IR,
+${alias}INT_PAY_FREQ,${alias}IR_INTRO,${alias}REMARK,${alias}BUSIDATE,
+${alias}MARKET,${alias}STKCODE,${alias}DIVD_BASI_DATE,${alias}CASH_DVD_PER_SHR,
+${alias}EQUI_REG_DATE,${alias}EX_DVD_DATE,${alias}EX_DVD_DATE_OTC,${alias}PAY_DIVD_DATE,
+${alias}PAY_DIVD_DATE_OTC,${alias}IMPL_NTC_DATE,${alias}SHR_BASI_Y,${alias}BASI_SHR,
+${alias}ASGNABLE_PRFT,${alias}NETVAL_EX_RIGH_DATE,${alias}PRFT_AMTS,${alias}REINV_ONACCT_DATE,
+${alias}ANN_DATE,${alias}PRFT_PAY_DATE,${alias}BASI_DATE_UNITNAV,${alias}DVD_TO_ACCT_DATE,
+${alias}BUSIDATE,${alias}MARKET,${alias}STKCODE,${alias}ALLOT__PRIC,
+${alias}ALLOT_RATI,${alias}ALLOT_AMT,${alias}ALLOT_AMT_ACT,${alias}ALLOT_COLL_FND,
+${alias}ALLOT_REG_DATE,${alias}EX_ALLOT_DATE,${alias}LIST_DATE,${alias}PYMT_BEGN_DATE,
+${alias}PYMT_END_DATE,${alias}IMPL_ANN_DATE,${alias}RSLT_ANN_DATE,${alias}LIST_ANN_DATE,
+${alias}PLAC_CD,${alias}ALLOT_SCR_ABBR,${alias}EXPE_COLL_FND,${alias}BUSIDATE,
+${alias}MARKET,${alias}STKCODE,${alias}ISS_PRICE,${alias}ISS_BEF_PER,
+${alias}ISS_AFT_PER,${alias}ISS_AMT,${alias}ONLNE_ISS_CNT,${alias}OFLE_ISS_AMOUNT,
+${alias}COLL_FND,${alias}ONLE_ISS_ALLO_RATI,${alias}ONLE_PURCH_CD,${alias}PURCH_DATE,
+${alias}PLAN_LIST_DATE,${alias}PURCH_FND_VER_DATE,${alias}ALLO_PUB_DATE,${alias}ONLNE_ALLO_PUB_DATE,
+${alias}LIST_DATE,${alias}ISS_PUB_DATE,${alias}LIST_PUB_DATE,${alias}OFLE_PLAC_ISS_PUB_DATE,
+${alias}OFLE_PURS_BGN_DATE,${alias}OFLE_PURCH_END_DATE,${alias}OFLE_PURCH_FND_END_DATE,${alias}OFLE_VER_DATE,
+${alias}PLAN_COLL_FND,${alias}PURCH_MAX,${alias}PURCH_AMT_MAX,${alias}ONLNE_ISS_ABBR,
+${alias}ONLNE_PURCH_MAX,${alias}OFLE_PURCH_MAX,${alias}OFLE_PURCH_MIN,${alias}NEW_STK_ISS_CNT,
+${alias}NEW_PUB_DATE,${alias}ONLE_PURCH_PAY_DATE,${alias}OFLE_ISS_NUM,${alias}LISTED_DATE
+        </sql>
+
+</mapper>
