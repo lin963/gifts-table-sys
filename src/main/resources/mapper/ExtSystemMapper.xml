@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gf.gifts.busi.order.dao.mapper.ExtSystemMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.gf.gifts.busi.order.entity.ExtSystem">
+            <id column="system_id" property="systemId" />
+            <result column="system_gid" property="systemGid" />
+            <result column="funcid" property="funcid" />
+            <result column="pathtype" property="pathtype" />
+            <result column="system_path" property="systemPath" />
+            <result column="app_id" property="appId" />
+            <result column="app_key" property="appKey" />
+            <result column="system_name" property="systemName" />
+            <result column="is_open" property="isOpen" />
+            <result column="certificate" property="certificate" />
+            <result column="is_link_check" property="isLinkCheck" />
+        </resultMap>
+
+
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+${alias}system_id,${alias}system_gid,${alias}funcid,${alias}pathtype,${alias}system_path,
+${alias}app_id,${alias}app_key,${alias}system_name,${alias}is_open,
+${alias}certificate,${alias}is_link_check
+        </sql>
+
+</mapper>
